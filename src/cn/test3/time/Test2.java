@@ -1,4 +1,4 @@
-package cn.test3.r;
+package cn.test3.time;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
  * @Author: zhangyifei
  * @Date: 2019/10/22
  */
-public class Test {
+public class Test2 {
     public static void main(String[] args) {
         long currentTime = System.currentTimeMillis() / 1000;
         // 获取当前时间 60天之前的时间  精确到秒

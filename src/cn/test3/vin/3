@@ -1,0 +1,28 @@
+{
+    'customerName': '李四',
+    'customerPhone': str(str(random.randint(130,139))+str(random.randint(10000000,99999999))),
+    'intentCarModel': None,
+    'registerDateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+    'extData': {},
+    'spiderCrawlLogId': 1,
+    'salesName':'段三懿',
+    'sourceCategory': 'DCC-400==>400-易车'
+},
+{
+    'customerName': '李四',
+    'customerPhone': str(str(random.randint(130,139))+str(random.randint(10000000,99999999))),
+    'intentCarModel': None,
+    'registerDateTime': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+    'extData': {},
+    'spiderCrawlLogId': 1,
+    'salesName':  None,
+    'sourceCategory': 'DCC-400==>400-易车'
+}
+]
+
+# todo 来源/门店（需要与上面的销售对应）
+upload_body = dict()
+upload_body['data'] = json.dumps(upload_data, ensure_ascii=False)
+upload_body['orgId'] = 30
+upload_body['followDate'] = '2019-11-05 10:06:00'
+upload_body['followBy'] = 'CcUser'

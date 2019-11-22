@@ -99,11 +99,11 @@ public class DatabaseUtil {
      */
     // public boolean recover(String command, String savePath) {
     //     boolean flag;
-    //     Runtime r = Runtime.getRuntime();
+    //     Runtime tupe = Runtime.getRuntime();
     //     BufferedReader br = null;
     //     BufferedWriter bw = null;
     //     try {
-    //         Process p = r.exec(command);
+    //         Process p = tupe.exec(command);
     //         OutputStream os = p.getOutputStream();
     //         FileInputStream fis = new FileInputStream(savePath);
     //         InputStreamReader isr = new InputStreamReader(fis, "utf-8");

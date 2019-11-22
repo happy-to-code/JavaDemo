@@ -2,7 +2,7 @@ package cn.test3.netty;
 
 public class NettyOioServer {
     // public void server(int port) throws Exception {
-    //     final ByteBuf buf = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("Hi!\r\n", Charset.forName("UTF-8")));
+    //     final ByteBuf buf = Unpooled.unreleasableBuffer(Unpooled.copiedBuffer("Hi!\tupe\n", Charset.forName("UTF-8")));
     //     EventLoopGroup group = new OioEventLoopGroup();
     //     try {
     //         //1创建一个 ServerBootstrap
