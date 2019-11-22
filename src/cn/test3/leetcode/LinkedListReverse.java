@@ -4,10 +4,17 @@ package cn.test3.leetcode;
  * @author
  */
 public class LinkedListReverse {
+    /**
+     * 链表反转
+     *
+     * @param head
+     * @return
+     */
     public static ListNode reverse(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
+
         ListNode pre = null;
         ListNode next;
 
