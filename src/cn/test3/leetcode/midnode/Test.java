@@ -52,7 +52,7 @@ public class Test {
             fast = fast.next.next;
         }
 
-
+        // 走到这一步，说明 （fast == null || fast.next == null）
         return fast == null ? slow : slow.next;
     }
 }
