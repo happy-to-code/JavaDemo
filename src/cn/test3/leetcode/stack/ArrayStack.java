@@ -1,5 +1,7 @@
 package cn.test3.leetcode.stack;
 
+import java.util.Arrays;
+
 /**
  * @author zhangyifei
  * @Describle 基于数组实现的顺序栈
@@ -32,6 +34,15 @@ public class ArrayStack {
         this.count = 0;
     }
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("ArrayStack{");
+        sb.append("items=").append(Arrays.toString(items));
+        sb.append(", count=").append(count);
+        sb.append(", n=").append(n);
+        sb.append('}');
+        return sb.toString();
+    }
 
     /**
      * 入栈操作
@@ -67,6 +78,30 @@ public class ArrayStack {
         String tmp = items[count - 1];
         --count;
         return tmp;
+    }
+
+    public static void main(String[] args) {
+        ArrayStack arrayStack = new ArrayStack(3);
+
+        boolean push1 = arrayStack.push("1");
+        boolean push2 = arrayStack.push("2");
+        boolean push3 = arrayStack.push("3");
+        System.out.println(arrayStack);
+        boolean push4 = arrayStack.push("4");
+        System.out.println(push4);
+        System.out.println(arrayStack);
+
+
+        String pop1 = arrayStack.pop();
+        String pop2 = arrayStack.pop();
+        String pop3 = arrayStack.pop();
+
+        System.out.println(pop1);
+        System.out.println(pop2);
+        System.out.println(pop3);
+
+        System.out.println(arrayStack);
+
     }
 
 }
