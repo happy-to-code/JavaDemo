@@ -1,7 +1,8 @@
 package cn.test3.leetcode.stack;
 
 /**
- * @author 基于数组实现的顺序栈
+ * @author zhangyifei
+ * @Describle 基于数组实现的顺序栈
  */
 public class ArrayStack {
     /**
@@ -26,13 +27,9 @@ public class ArrayStack {
      * @param n
      */
     public ArrayStack(int n) {
-
         this.items = new String[n];
-
         this.n = n;
-
         this.count = 0;
-
     }
 
 
@@ -50,9 +47,7 @@ public class ArrayStack {
 
         // 将 item 放到下标为 count 的位置，并且 count 加一
         items[count] = item;
-
         ++count;
-
         return true;
     }
 
@@ -63,7 +58,6 @@ public class ArrayStack {
      * @return
      */
     public String pop() {
-
         // 栈为空，则直接返回 null
         if (count == 0) {
             return null;
@@ -71,9 +65,7 @@ public class ArrayStack {
 
         // 返回下标为 count-1 的数组元素，并且栈中元素个数 count 减一
         String tmp = items[count - 1];
-
         --count;
-
         return tmp;
     }
 
