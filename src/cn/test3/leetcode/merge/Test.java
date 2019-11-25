@@ -1,5 +1,7 @@
 package cn.test3.leetcode.merge;
 
+import cn.test3.leetcode.reverse.ListNode;
+
 /**
  * @Describle:
  * @Author: zhangyifei
@@ -40,7 +42,7 @@ public class Test {
         }
 
         ListNode head;
-        if (l1.val <= l2.val) {
+        if (l1.data <= l2.data) {
             head = l1;
             head.next = mergeTwoLists(l1.next, l2);
         } else {

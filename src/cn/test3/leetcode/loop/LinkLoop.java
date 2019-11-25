@@ -1,26 +1,13 @@
 package cn.test3.leetcode.loop;
 
+import cn.test3.leetcode.reverse.ListNode;
+
 import java.util.HashMap;
 
 /**
- * @author
+ * @author zyf
  */
-public class LinkADT {
-
-    /**
-     * 单链表节点
-     *
-     * @param <T>
-     */
-    private static class SingleNode<T> {
-        public SingleNode<T> next;
-        public T data;
-
-        public SingleNode(T data) {
-            this.data = data;
-        }
-
-    }
+public class LinkLoop {
 
     /**
      * 判断是否有环 快慢指针法
@@ -28,15 +15,15 @@ public class LinkADT {
      * @param headNode
      * @return
      */
-    public static boolean hasLoop(SingleNode headNode) {
+    public static boolean hasLoop(ListNode headNode) {
         if (headNode == null) {
             return false;
         }
 
         // 慢指针  每次遍历一个节点
-        SingleNode p = headNode;
+        ListNode p = headNode;
         // 快指针  每次遍历两个节点
-        SingleNode q = headNode.next;
+        ListNode q = headNode.next;
 
         // 快指针未能遍历完所有节点
         while (q != null && q.next != null) {
@@ -61,7 +48,7 @@ public class LinkADT {
     /**
      * 保存足迹信息
      */
-    private static HashMap<SingleNode, Integer> nodeMap = new HashMap<>(4);
+    private static HashMap<ListNode, Integer> nodeMap = new HashMap<>(4);
 
     /**
      * 判断是否有环 足迹法
@@ -69,7 +56,7 @@ public class LinkADT {
      * @param node
      * @return
      */
-    public static boolean hasLoop2(SingleNode node, int index) {
+    public static boolean hasLoop2(ListNode node, int index) {
         if (node == null || node.next == null) {
             return false;
         }
@@ -84,10 +71,10 @@ public class LinkADT {
 
 
     public static void main(String[] args) {
-        SingleNode s0 = new SingleNode(0);
-        SingleNode s1 = new SingleNode(1);
-        SingleNode s2 = new SingleNode(2);
-        SingleNode s3 = new SingleNode(3);
+        ListNode s3 = new ListNode(3);
+        ListNode s0 = new ListNode(0);
+        ListNode s1 = new ListNode(1);
+        ListNode s2 = new ListNode(2);
 
         s0.next = s1;
         s1.next = s2;
@@ -97,7 +84,7 @@ public class LinkADT {
         boolean b = hasLoop(s1);
         System.out.println(b);
         System.out.println("--------------------");
-        boolean b2 = hasLoop2(s1,0);
+        boolean b2 = hasLoop2(s1, 0);
         System.out.println(b2);
     }
 }
