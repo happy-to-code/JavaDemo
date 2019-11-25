@@ -1,6 +1,6 @@
-package cn.test3.leetcode.loop;
+package cn.test3.leetcode.list.loop;
 
-import cn.test3.leetcode.reverse.ListNode;
+import cn.test3.leetcode.list.ListNode;
 
 import java.util.HashMap;
 

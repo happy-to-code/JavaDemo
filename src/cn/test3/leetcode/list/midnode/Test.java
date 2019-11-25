@@ -1,6 +1,6 @@
-package cn.test3.leetcode.midnode;
+package cn.test3.leetcode.list.midnode;
 
-import cn.test3.leetcode.reverse.ListNode;
+import cn.test3.leetcode.list.ListNode;
 
 /**
  * @Describle:

@@ -1,4 +1,6 @@
-package cn.test3.leetcode.reverse;
+package cn.test3.leetcode.list.reverse;
+
+import cn.test3.leetcode.list.ListNode;
 
 /**
  * @author

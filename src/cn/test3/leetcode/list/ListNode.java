@@ -1,4 +1,4 @@
-package cn.test3.leetcode.reverse;
+package cn.test3.leetcode.list;
 
 /**
  * @author zyf
