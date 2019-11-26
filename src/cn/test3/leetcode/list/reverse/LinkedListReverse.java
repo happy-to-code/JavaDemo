@@ -41,7 +41,6 @@ public class LinkedListReverse {
         // 反转
         ListNode head = reverse(node1);
         System.out.print(head.data + " " + head.next.data + " " + head.next.next.data);
-
     }
 
 }

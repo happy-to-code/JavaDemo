@@ -47,6 +47,7 @@ public class Test {
         ListNode slow = head;
         ListNode fast = head.next;
 
+        // 当没有到尾节点时，就一直循环
         while (fast != null && fast.next != null) {
             slow = slow.next;
             fast = fast.next.next;

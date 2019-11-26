@@ -39,25 +39,25 @@ public class Test {
             throw new Exception("数字n超过链表的长度！");
         }
 
-        ListNode p = head;
-        ListNode q = head;
-        //  p先移动n个位置
+        ListNode slow = head;
+        ListNode fast = head;
+        //  fast先移动n个位置
         for (int i = 0; i < n; i++) {
-            p = p.next;
+            fast = fast.next;
         }
 
-        if (p == null) {
+        if (fast == null) {
             head = head.next;
             return head;
         }
-        //  当p达到尾部
-        while (p.next != null) {
-            p = p.next;
-            q = q.next;
+        //  当fast达到尾部
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
         }
 
         // 1-->2-->3  这一步相当于  1-->3
-        q.next = q.next.next;
+        slow.next = slow.next.next;
 
         return head;
 

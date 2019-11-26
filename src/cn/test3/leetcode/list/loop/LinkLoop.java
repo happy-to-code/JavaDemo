@@ -21,21 +21,22 @@ public class LinkLoop {
         }
 
         // 慢指针  每次遍历一个节点
-        ListNode p = headNode;
+        ListNode slow = headNode;
         // 快指针  每次遍历两个节点
-        ListNode q = headNode.next;
+        ListNode fast = headNode.next;
 
         // 快指针未能遍历完所有节点
-        while (q != null && q.next != null) {
+        while (fast != null && fast.next != null) {
             // 遍历一个节点
-            p = p.next;
+            slow = slow.next;
             // 遍历两个个节点
-            q = q.next.next;
+            fast = fast.next.next;
 
             // 已到链表末尾
-            if (q == null) {
+            if (fast == null) {
                 return false;
-            } else if (p == q) {
+                // 如果有环就必然会相遇
+            } else if (slow == fast) {
                 // 快慢指针相遇，存在环
                 return true;
             }
