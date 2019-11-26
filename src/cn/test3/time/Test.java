@@ -12,5 +12,8 @@ public class Test {
         String substring1 = s.substring(1);
         System.out.println(substring);
         System.out.println(substring1);
+        System.out.println("--------------");
+
+        System.out.println(1%8);
     }
 }
