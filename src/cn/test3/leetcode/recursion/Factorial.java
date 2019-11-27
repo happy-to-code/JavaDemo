@@ -5,6 +5,10 @@ import java.util.Stack;
 /**
  * @author zhangyifei
  * 几种方法求阶层
+ * 递归的几种套路：
+ * f(n) = f(n-1) +　f(n-2)
+ * f(n) = f(n-1) * f(n-2)
+ * f(n) = n*f(n-1)
  */
 public class Factorial {
     public static void main(String[] args) {
