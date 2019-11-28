@@ -1,5 +1,7 @@
 package cn.test3.leetcode.sort.level2;
 
+import java.util.Arrays;
+
 /**
  * @Describle:优化： 1、快速排序对于处理小数组（N <= 20）的数组时，快速排序比插入排序要慢， 所以在排序小数组时应该切换到插入排序，
  * 我们面对小数组的通常的解决办法是对于小的数组不递归的使用快速排序，而代之以诸如插入排序这样的对小数组有效的排序算法。
@@ -45,6 +47,7 @@ public class QuickSort4 {
 
     public static void main(String[] args) {
         int[] arr = {6, 4, 3, 2, 7, 1, 5};
+        Arrays.sort(arr);
         quickSort(arr, 0, arr.length - 1);
         printArr(arr);
     }
