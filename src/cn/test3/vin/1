@@ -1,65 +1,25 @@
-
-
-
-public void delete(int data) {
-
-Node p = tree; // p 指向要删除的节点，初始化指向根节点
-
-Node pp = null; // pp 记录的是 p 的父节点
-
-while (p != null && p.data != data) {
-
-pp = p;
-
-if (data > p.data) p = p.right;
-
-else p = p.left;
-
-}
-
-if (p == null) return; // 没有找到
-
-
-// 要删除的节点有两个子节点
-
-if (p.left != null && p.right != null) { // 查找右子树中最小节点
-
-Node minP = p.right;
-
-Node minPP = p; // minPP 表示 minP 的父节点
-
-while (minP.left != null) {
-
-minPP = minP;
-
-minP = minP.left;
-
-}
-
-p.data = minP.data; // 将 minP 的数据替换到 p 中
-
-p = minP; // 下面就变成了删除 minP 了
-
-pp = minPP;
-
-}
-
-
-// 删除节点是叶子节点或者仅有一个子节点
-
-Node child; // p 的子节点
-
-if (p.left != null) child = p.left;
-
-else if (p.right != null) child = p.right;
-
-else child = null;
-
-
-if (pp == null) tree = child; // 删除的是根节点
-
-else if (pp.left == p) pp.left = child;
-
-else pp.right = child;
-
-}
+SELECT
+	a.*,
+	b.msgtime
+FROM
+	wework_customer a
+	JOIN (
+SELECT
+	wc.enterprise_corpid AS enterprise_corpid,
+	wc.external_userid AS external_userid,
+	ifnull( max( CONVERT ( wcd.msgtime, UNSIGNED ) ), 0 ) AS msgtime
+FROM
+	wework_customer wc
+	LEFT JOIN wework_chat_data wcd ON wcd.`from` = wc.external_userid
+	OR wcd.tolist REGEXP wc.external_userid
+WHERE
+	wc.id IN ( 18, 21, 25 )
+GROUP BY
+	wc.enterprise_corpid,
+	wc.external_userid
+	) b ON a.enterprise_corpid = b.enterprise_corpid
+	AND a.external_userid = b.external_userid
+WHERE
+	a.id IN ( 18, 21, 25 )
+ORDER BY
+	b.msgtime DESC

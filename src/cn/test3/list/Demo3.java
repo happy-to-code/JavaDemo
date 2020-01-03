@@ -1,7 +1,8 @@
 package cn.test3.list;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * @Describle:
@@ -10,6 +11,10 @@ import java.util.Map;
  */
 public class Demo3 {
     public static void main(String[] args) {
-        Map list = new LinkedHashMap<>();
+        List<Long> list = new ArrayList<>();
+
+        // 过滤集合中相同的元素
+        List<Long> listWithoutDup = new ArrayList<>(new HashSet<>(list));
+        System.out.println(listWithoutDup);
     }
 }

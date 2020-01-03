@@ -277,7 +277,7 @@ public class BinarySearchTree {
 ```
 [红黑树链接1](https://www.jianshu.com/p/e136ec79235c)
 
-[红黑树链接2](https://www.cnblogs.com/tiancai/p/9072813.html)
+[红黑树链接2：-- 2-3树](https://www.cnblogs.com/tiancai/p/9072813.html)
 
 ### 比较
 > 动态数据结构还包括以下几种：
