@@ -20,7 +20,9 @@ public class Demo4 {
 
         // for循环 int i = 0, len = list.size()
         for (int i = 0, len = list.size(); i < len; i++) {
+            System.out.println("--------");
             System.out.println(list.get(i));
+            System.out.println("____________");
         }
 
     }
