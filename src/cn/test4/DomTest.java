@@ -51,7 +51,6 @@ public class DomTest {
         DocumentBuilder builder = factory.newDocumentBuilder();
         Document doc = builder.parse(f);
         NodeList nl = doc.getElementsByTagName("xml");
-        System.out.println(nl + "---111212");
         for (int i = 0; i < nl.getLength(); i++) {
             System.out.print("ToUserName:" + doc.getElementsByTagName("ToUserName").item(i).getFirstChild().getNodeValue());
             System.out.println("FromUserName:" + doc.getElementsByTagName("FromUserName").item(i).getFirstChild().getNodeValue());
