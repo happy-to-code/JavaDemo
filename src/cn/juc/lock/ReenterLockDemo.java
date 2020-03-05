@@ -1,7 +1,7 @@
 package cn.juc.lock;
 
 /**
- * @Describle:synchronized是可重入锁
+ * @Describle:synchronized是可重入锁（即递归锁）
  * @Author: zhangyifei
  * @Date: 2020/3/4 22:06
  */

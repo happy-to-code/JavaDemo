@@ -1,8 +1,8 @@
 package cn.juc.collection.list;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
  * @Describle:验证ArrayList线程不安全
@@ -11,11 +11,14 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class ArrayListDemo {
     public static void main(String[] args) {
-        // List<String> list = new ArrayList<>(10);
-        // List<String> list = Collections.synchronizedList(new ArrayList<>(10));
-        List<String> list = new CopyOnWriteArrayList<>();
+        // 这边是不安全的
+        List<String> list = new ArrayList<>(10);
 
-        // java.util.ConcurrentModificationException
+        // 下面两种是安全的，当然用vector也是安全的，但是vector没有下面两种效率高
+        // List<String> list = Collections.synchronizedList(new ArrayList<>(10));
+        // List<String> list = new CopyOnWriteArrayList<>();
+
+        // 并发修改异常 java.util.ConcurrentModificationException
         for (int i = 0; i < 30; i++) {
             new Thread(String.valueOf(i)) {
                 @Override

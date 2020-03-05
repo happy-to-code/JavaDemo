@@ -18,7 +18,7 @@ public class SpinLockDemo {
         // 获取线程
         Thread thread = Thread.currentThread();
         System.out.println("thread = " + thread.getName() + "\t 进来了……");
-        // 如果except没有线程，那么就将自己的线程给它--> 然后成功了  取反就跳出了
+        // 这边是自旋的操作 如果except没有线程，那么就将自己的线程给它--> 然后成功了  取反就跳出了
         while (!atomicReference.compareAndSet(null, thread)) {
         }
     }
