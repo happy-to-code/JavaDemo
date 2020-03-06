@@ -7,14 +7,14 @@ package cn.juc.单列;
  * @Date: 2020/3/2
  */
 public class InnerSingleton {
-    private static class SingletonHolder {
-        private static final InnerSingleton INSTANCE = new InnerSingleton();
-    }
-
     private InnerSingleton() {
     }
 
     public static final InnerSingleton getInstance() {
         return SingletonHolder.INSTANCE;
+    }
+
+    private static class SingletonHolder {
+        private static final InnerSingleton INSTANCE = new InnerSingleton();
     }
 }

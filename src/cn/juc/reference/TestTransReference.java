@@ -7,18 +7,6 @@ package cn.juc.reference;
  */
 public class TestTransReference {
 
-    public void cahngeValue1(int age) {
-        age = 300;
-    }
-
-    public void changeValue2(People people) {
-        people.setName("xxx");
-    }
-
-    public void changeValue3(String string) {
-        string = "xx--xx";
-    }
-
     public static void main(String[] args) {
         TestTransReference test = new TestTransReference();
 
@@ -36,6 +24,18 @@ public class TestTransReference {
         System.out.println("s = " + str);
 
 
+    }
+
+    public void cahngeValue1(int age) {
+        age = 300;
+    }
+
+    public void changeValue2(People people) {
+        people.setName("xxx");
+    }
+
+    public void changeValue3(String string) {
+        string = "xx--xx";
     }
 
 }

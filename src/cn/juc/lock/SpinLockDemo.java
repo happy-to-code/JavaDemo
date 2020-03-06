@@ -11,29 +11,6 @@ import java.util.concurrent.atomic.AtomicReference;
 public class SpinLockDemo {
     AtomicReference<Thread> atomicReference = new AtomicReference<>();
 
-    /**
-     * 自己实现自旋锁--上锁
-     */
-    public void myLock() {
-        // 获取线程
-        Thread thread = Thread.currentThread();
-        System.out.println("thread = " + thread.getName() + "\t 进来了……");
-        // 这边是自旋的操作 如果except没有线程，那么就将自己的线程给它--> 然后成功了  取反就跳出了
-        while (!atomicReference.compareAndSet(null, thread)) {
-        }
-    }
-
-    /**
-     * 自己实现自旋锁--解锁
-     */
-    public void myUnLock() {
-        // 获取线程
-        Thread thread = Thread.currentThread();
-        System.out.println("thread = " + thread.getName() + "\t 释放锁。。。。。。。");
-        // 将当前线程置为空
-        atomicReference.compareAndSet(thread, null);
-    }
-
     public static void main(String[] args) {
         SpinLockDemo spinLockDemo = new SpinLockDemo();
 
@@ -62,6 +39,29 @@ public class SpinLockDemo {
             }
             spinLockDemo.myUnLock();
         }, "t2").start();
+    }
+
+    /**
+     * 自己实现自旋锁--上锁
+     */
+    public void myLock() {
+        // 获取线程
+        Thread thread = Thread.currentThread();
+        System.out.println("thread = " + thread.getName() + "\t 进来了……");
+        // 这边是自旋的操作 如果except没有线程，那么就将自己的线程给它--> 然后成功了  取反就跳出了
+        while (!atomicReference.compareAndSet(null, thread)) {
+        }
+    }
+
+    /**
+     * 自己实现自旋锁--解锁
+     */
+    public void myUnLock() {
+        // 获取线程
+        Thread thread = Thread.currentThread();
+        System.out.println("thread = " + thread.getName() + "\t 释放锁。。。。。。。");
+        // 将当前线程置为空
+        atomicReference.compareAndSet(thread, null);
     }
 
 }

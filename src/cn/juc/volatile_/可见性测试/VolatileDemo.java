@@ -10,13 +10,6 @@ public class VolatileDemo {
     volatile int num = 0;
     // int num = 0;
 
-    /**
-     * 将num至为60的方法
-     */
-    private void addTo60() {
-        this.num = 60;
-    }
-
     public static void main(String[] args) {
         VolatileDemo volatileDemo = new VolatileDemo();
 
@@ -45,5 +38,12 @@ public class VolatileDemo {
         }
 
         System.out.println(Thread.currentThread().getName() + "mission is over\t" + volatileDemo.num);
+    }
+
+    /**
+     * 将num至为60的方法
+     */
+    private void addTo60() {
+        this.num = 60;
     }
 }

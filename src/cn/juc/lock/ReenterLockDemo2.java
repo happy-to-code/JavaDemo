@@ -10,12 +10,12 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 class Phone2 implements Runnable {
 
+    Lock lock = new ReentrantLock();
+
     @Override
     public void run() {
         get();
     }
-
-    Lock lock = new ReentrantLock();
 
     private void get() {
         try {

@@ -16,6 +16,11 @@ public class User {
      */
     private Long age;
 
+    public User(String name, Long age) {
+        this.name = name;
+        this.age = age;
+    }
+
     public String getName() {
         return name;
     }
@@ -29,11 +34,6 @@ public class User {
     }
 
     public void setAge(Long age) {
-        this.age = age;
-    }
-
-    public User(String name, Long age) {
-        this.name = name;
         this.age = age;
     }
 }
