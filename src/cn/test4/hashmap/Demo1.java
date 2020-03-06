@@ -11,18 +11,18 @@ import java.util.Map;
 public class Demo1 {
     public static void main(String[] args) {
 
-        Map<Integer, Integer> map = new HashMap<>(1000000);
+        Map<Integer, Integer> map = new HashMap<>(30000);
         long time = getTime(map);
         System.out.println("time = " + time);
 
-        Map<Integer, Integer> map2 = new HashMap<>(1000000 * 2);
+        Map<Integer, Integer> map2 = new HashMap<>(30000 * 2);
         long time2 = getTime(map2);
         System.out.println("time2 = " + time2);
     }
 
     private static long getTime(Map<Integer, Integer> map) {
         long time1 = System.currentTimeMillis();
-        for (int i = 0; i < 1000000; i++) {
+        for (int i = 0; i < 30000; i++) {
             map.put(i, i);
         }
         long time2 = System.currentTimeMillis();
