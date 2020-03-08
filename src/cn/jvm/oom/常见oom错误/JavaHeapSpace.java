@@ -1,4 +1,4 @@
-package cn.jvm.oom;
+package cn.jvm.oom.常见oom错误;
 
 /**
  * 演示OOM：java heap size

@@ -1,4 +1,4 @@
-package cn.jvm.oom;
+package cn.jvm.oom.常见oom错误;
 
 /**
  * @Describle:StockOverFlowError错误
@@ -7,7 +7,7 @@ package cn.jvm.oom;
  */
 public class StockOverFlowError {
     public static void main(String[] args) {
-        // at cn.jvm.oom.StockOverFlowError.test(StockOverFlowError.java:14)
+        // at cn.jvm.oom.常见oom错误.StockOverFlowError.test(StockOverFlowError.java:14)
         test();
     }
 

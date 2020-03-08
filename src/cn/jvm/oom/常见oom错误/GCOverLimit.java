@@ -1,4 +1,4 @@
-package cn.jvm.oom;
+package cn.jvm.oom.常见oom错误;
 
 import java.util.ArrayList;
 import java.util.List;
