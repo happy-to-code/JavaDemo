@@ -22,6 +22,8 @@ public class Base64Test {
         System.out.println(s);
 
 
+
+
         // boolean b = base64ChangeImage(baseStr, imagePath);
         // System.out.println(b);
 

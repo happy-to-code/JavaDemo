@@ -19,6 +19,7 @@ public class ArraysTest {
         ia[0] = 0;
         System.out.println(list1);
 
+
     }
 
 

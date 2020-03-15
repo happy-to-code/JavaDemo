@@ -18,7 +18,9 @@ import java.io.IOException;
  */
 public class DomTest {
     public static void main(String[] args) throws IOException, SAXException, ParserConfigurationException {
-        String sMsg = "<xml><ToUserName><![CDATA[wx697368e10b88271a]]></ToUserName><FromUserName><![CDATA[sys]]></FromUserName><CreateTime>1582884511</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[change_external_contact]]></Event><ChangeType><![CDATA[del_external_contact]]></ChangeType><UserID><![CDATA[liuqian_bs]]></UserID><ExternalUserID><![CDATA[wmiqFYEQAAPbG7cm4e-z05MlQj5EOdEA]]></ExternalUserID></xml>";
+        // String sMsg = "<xml><ToUserName><![CDATA[wx697368e10b88271a]]></ToUserName><FromUserName><![CDATA[sys]]></FromUserName><CreateTime>1582884511</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[change_external_contact]]></Event><ChangeType><![CDATA[del_external_contact]]></ChangeType><UserID><![CDATA[liuqian_bs]]></UserID><ExternalUserID><![CDATA[wmiqFYEQAAPbG7cm4e-z05MlQj5EOdEA]]></ExternalUserID></xml>";
+
+        String sMsg = "<xml><ToUserName><![CDATA[wx697368e10b88271a]]></ToUserName><FromUserName><![CDATA[sys]]></FromUserName><CreateTime>1584063312</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[change_external_contact]]></Event><ChangeType><![CDATA[add_external_contact]]></ChangeType><UserID><![CDATA[liuqian_bs]]></UserID><ExternalUserID><![CDATA[wmiqFYEQAAPbG7cm4e-z05MlQj5EOdEA]]></ExternalUserID><WelcomeCode><![CDATA[3LStcCBsjfExcGuPYHNL8_QEvJYNNjCkAsxmN3ReQRA]]></WelcomeCode></xml>";
 
         /**
          * 获取本地项目路径，相对路径
