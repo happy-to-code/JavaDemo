@@ -1,0 +1,25 @@
+SELECT
+	a.*,
+	b.msgtime
+FROM
+	wework_customer a
+	JOIN (
+SELECT
+	wc.enterprise_corpid AS enterprise_corpid,
+	wc.external_userid AS external_userid,
+	ifnull( max( CONVERT ( wcd.msgtime, UNSIGNED ) ), 0 ) AS msgtime
+FROM
+	wework_customer wc
+	LEFT JOIN wework_chat_data wcd ON wcd.`from` = wc.external_userid
+	OR wcd.tolist REGEXP wc.external_userid
+WHERE
+	wc.id IN ( 18, 21, 25 )
+GROUP BY
+	wc.enterprise_corpid,
+	wc.external_userid
+	) b ON a.enterprise_corpid = b.enterprise_corpid
+	AND a.external_userid = b.external_userid
+WHERE
+	a.id IN ( 18, 21, 25 )
+ORDER BY
+	b.msgtime DESC

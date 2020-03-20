@@ -1,0 +1,24 @@
+[
+    {“siteId“:10097,“siteName“:“汽车之家“,“saleList“:
+        [
+        {“id“:57,“orgId“:29,“siteId“:0,“fakeId“:57,“orgUserId“:7175,“orgUserName“:“胡波“,“webUserName“:“嗯嗯“},
+        {“id“:56,“orgId“:29,“siteId“:0,“fakeId“:56,“orgUserId“:1966,“orgUserName“:“吴洋“,“webUserName“:“hj“},
+        {“id“:55,“orgId“:29,“siteId“:0,“fakeId“:55,“orgUserId“:1450,“orgUserName“:“戴茂“,“webUserName“:“哈哈“},
+        {“id“:54,“orgId“:29,“siteId“:0,“fakeId“:54,“orgUserId“:4778,“orgUserName“:“应佳庆“,“webUserName“:“啊哦“},
+        {“id“:53,“orgId“:29,“siteId“:0,“fakeId“:53,“orgUserId“:1426,“orgUserName“:“段海林“,“webUserName“:“牛逼“},
+        {“id“:52,“orgId“:29,“siteId“:0,“fakeId“:52,“orgUserId“:4555,“orgUserName“:“张颖“,“webUserName“:“意的“},
+        {“id“:51,“orgId“:29,“siteId“:0,“fakeId“:51,“orgUserId“:1301,“orgUserName“:“Joy“,“webUserName“:“f“},
+        {“id“:50,“orgId“:29,“siteId“:0,“fakeId“:50,“orgUserId“:1527,“orgUserName“:“张懿“,“webUserName“:“呵呵“},
+        {“id“:49,“orgId“:29,“siteId“:0,“fakeId“:49,“orgUserId“:1136,“orgUserName“:“姚建峰“,“webUserName“:“毛伊娜“}]},
+    {“siteId“:10098,“siteName“:“易车“,“saleList“:
+        [
+        {“id“:40,“orgId“:29,“siteId“:1,“fakeId“:40,“orgUserId“:1104,“orgUserName“:“Amber“,“webUserName“:“4“},
+        {“id“:39,“orgId“:29,“siteId“:1,“fakeId“:39,“orgUserId“:2385,“orgUserName“:“郑协“,“webUserName“:“一二“},
+        {“id“:38,“orgId“:29,“siteId“:1,“fakeId“:38,“orgUserId“:1488,“orgUserName“:“钟俊伟“,“webUserName“:“a“},
+        {“id“:37,“orgId“:29,“siteId“:1,“fakeId“:37,“orgUserId“:4359,“orgUserName“:“包薇“,“webUserName“:“小白“},
+        {“id“:36,“orgId“:29,“siteId“:1,“fakeId“:36,“orgUserId“:2594,“orgUserName“:“周柏宇“,“webUserName“:“Gu Novia“},
+        {“id“:5,“orgId“:29,“siteId“:1,“fakeId“:5,“orgUserId“:2733,“orgUserName“:“孟令超“,“webUserName“:“谭伟“},
+        {“id“:4,“orgId“:29,“siteId“:1,“fakeId“:4,“orgUserId“:2564,“orgUserName“:“贾石“,“webUserName“:“李祥“},
+        {“id“:3,“orgId“:29,“siteId“:1,“fakeId“:3,“orgUserId“:1487,“orgUserName“:“戴俊星“,“webUserName“:“颜子薇“},
+        {“id“:2,“orgId“:29,“siteId“:1,“fakeId“:2,“orgUserId“:4517,“orgUserName“:“高文健“,“webUserName“:“赵彐兰“},
+        {“id“:1,“orgId“:29,“siteId“:1,“fakeId“:1,“orgUserId“:2733,“orgUserName“:“孟令超“,“webUserName“:“100056885“}]}]
