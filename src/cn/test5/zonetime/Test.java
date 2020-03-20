@@ -26,10 +26,8 @@ public class Test {
         System.out.println("localDateTime = " + localDateTime);
         int second = now.getSecond();
         System.out.println("second = " + second);
-
         Instant instant = now.toInstant();
         System.out.println("instant = " + instant);
-
         Timestamp from = Timestamp.from(instant);
         System.out.println("from = " + from);
     }
