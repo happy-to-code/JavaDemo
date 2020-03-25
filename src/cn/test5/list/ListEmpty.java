@@ -10,6 +10,10 @@ import java.util.List;
  */
 public class ListEmpty {
     public static void main(String[] args) {
+        test();
+    }
+
+    private static void test() {
         List<String> list = new ArrayList<>(10);
         System.out.println(list.size());
         System.out.println("---------------");

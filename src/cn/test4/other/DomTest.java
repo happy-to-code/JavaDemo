@@ -1,4 +1,4 @@
-package cn.test4;
+package cn.test4.other;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;

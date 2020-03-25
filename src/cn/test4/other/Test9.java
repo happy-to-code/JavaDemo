@@ -1,4 +1,4 @@
-package cn.test4;
+package cn.test4.other;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
