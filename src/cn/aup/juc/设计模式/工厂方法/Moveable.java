@@ -43,7 +43,8 @@ class BroomFactory extends VehicleFactory {
 // 测试类
 class Test {
     public static void main(String[] args) {
-        VehicleFactory factory = new BroomFactory();
+        // VehicleFactory factory = new BroomFactory();
+        VehicleFactory factory = new PlaneFactory();
         Moveable m = factory.create();
         m.run();
     }
