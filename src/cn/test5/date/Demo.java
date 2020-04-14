@@ -19,5 +19,14 @@ public class Demo {
         Date start = calendar.getTime();
         System.out.println("start = " + start);
         System.out.println("start = " + start.getTime());
+
+        System.out.println("=====================");
+
+        Long time = (new Date()).getTime() / 1000;
+        System.out.println(time);
+        System.out.println(time.toString().length());
+
+
+
     }
 }
