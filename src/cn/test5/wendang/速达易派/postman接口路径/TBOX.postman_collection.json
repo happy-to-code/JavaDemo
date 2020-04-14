@@ -1,0 +1,668 @@
+{
+	"id": "a64a04b8-45c3-428e-8d9a-95b74112dd2e",
+	"name": "TBOX",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"221981b4-f8d8-4f5c-b952-fc7d58e6571c",
+		"10d871a3-28b2-4003-9dd9-a6ac0a71cd9c",
+		"1bfb4b3c-f7db-4f4d-ab7d-f17bc1d4216b",
+		"d3e359e6-f233-4d39-be67-4f31d889cc56",
+		"e5dac796-2bfe-474d-a659-e19a9c2c23cd",
+		"d9835f1c-a072-4672-8453-c75b733d1037",
+		"22d62b41-1377-447b-9229-84e9ef002145",
+		"d1c8c8cf-945b-4522-a2b9-2f65448d244a",
+		"c69d2d47-3f2e-4441-8548-6634ace10b2e",
+		"341d3cef-c29b-4847-a1dd-e61a76e2464b",
+		"c441b922-8b09-4926-9076-b1374996d0ef",
+		"37fd32e1-3568-4e86-8d88-348861b36c5a",
+		"a499ac4a-cfff-4c61-a7cf-81a68953eb04",
+		"4fcb3e9d-c120-44d5-af86-4bd21b3527e5",
+		"c4425c7d-059a-4c64-85a2-78193597ca74",
+		"c2853308-2371-48f8-a740-d40039829534"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "10d871a3-28b2-4003-9dd9-a6ac0a71cd9c",
+			"name": "根据车牌和时间段获取车辆轨迹",
+			"url": "localhost:8081/api/tbox/getLocation",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1ODU1Mzg0fQ.D3oPo0_nr7M-WoU2fGhqnBvBFSjXo-B-6I2wRwjWIRivSWJtw51m8fwgSvqJclEdyFJqH-ikMw3OopFYB8fteg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"licensePlate\":\"粤BDA7116\",\n\t\"beginTime\":\"1561938391\",\n\t\"endTime\":\"1564559191\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1bfb4b3c-f7db-4f4d-ab7d-f17bc1d4216b",
+			"name": "实时位置",
+			"url": "localhost:8081/api/tbox/getRealTimeLocation",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MDgzNTIwfQ.HIul-hX99SLFz5s5SjIjHg1fL_uX2iV_zpkW2wPl41o1n80NZ8vx4sSM2uOBBj5D7-Cr2JNexJqiM5TwvynXPQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"limitCount\":\"\",\n\t\"orgId\":\"\",\n\t\"operationStatus\":\"\",\n\t\"licensePlate\":[]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "221981b4-f8d8-4f5c-b952-fc7d58e6571c",
+			"name": "分页查询",
+			"url": "localhost:8083/api/tbox/msgPageList",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYxMDMyNTE1LCJpYXQiOjE1NjEwMjk1MTV9.X6PYgkigRK9g4kl2B017QL83Hjj8OEmbwpl-GYCV1iFpxtJ-hHgnE9Y1zzQQo5yHYTompyLLC91JTrihJR9L-A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"licensePlate\":\"陕AD37396\",\n\t\"beginTime\":\"1560998747\",\n\t\"endTime\":\"1560998701\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 10\n\t}\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "22d62b41-1377-447b-9229-84e9ef002145",
+			"name": "导出终端数据",
+			"url": "localhost:8081/api/tbox/exportTerminalData?beginTime=1535919154&endTime=1585928945",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "beginTime",
+					"value": "1535919154",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "endTime",
+					"value": "1585928945",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2MjY4NDkwfQ.Y-lRqtPEgVPalJAqTSorcqtPq0A7MCZxcVDWQ7KczdGt3EcYuOw5Gn-ZZv_QdxDOuWEom83NHpmIptFAMHIB0Q"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "341d3cef-c29b-4847-a1dd-e61a76e2464b",
+			"name": "统计车辆各种状态的数量",
+			"url": "localhost:8081/api/tbox/countVehicleStatusNum",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1OTQzMzI1fQ.OkPB0az6uE_h76f80iDn6fUCm8eb2oIau9Ptwsj6KZLUBsjxU9Lek--x1j36WW9UL-6ubhnWQBq1n8TutFUi-w"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "37fd32e1-3568-4e86-8d88-348861b36c5a",
+			"name": "计算总里程",
+			"url": "localhost:8081/api/tbox/countTotalMileage",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2ODIwNTkwfQ.gAFxmbEzzaipsJICf4iuyp8i16YHHYcNGgHKCiEJOR_lYFvkFtoh4qsBxc4t1Uo8E4ClTIIx1lAxON_vVPjU2g"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4fcb3e9d-c120-44d5-af86-4bd21b3527e5",
+			"name": "将经纬度转换为具体位置",
+			"url": "localhost:8081/tbox/status/getProvince",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2MTgwMjUxfQ.loo-JwGac9DviVPboKPFkm1N58nWn_FyRY3XHjQIYi0pLksgzoB6PCMBGD8PBfOuzY6vFLhU1IkbgRfgbV7D4w"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"longitude\":\"119.310026\",\n\t\"latitude\":\"26.097923\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a499ac4a-cfff-4c61-a7cf-81a68953eb04",
+			"name": "获取该省份下车辆的实时位置信息",
+			"url": "localhost:8081/api/tbox/getLocationByProvince",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2MTg1MzExfQ.VFzOPWIxYXExW98keda7oMADynaIcBneRr_waMwxyCtSqoT3kasbTvtyeUo4Fg7HHjHikAGuO0O_0kIZVwqwSg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"province\":\"\",\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c2853308-2371-48f8-a740-d40039829534",
+			"name": "备份数据",
+			"url": "localhost:8081/api/back/bk",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTcxNzMzOTA4fQ.vmV8Wc1hhUe_VP0ryDEeDcdAH3p7uv3XiGpfeEvYFgECfKH56cN93ZfAxbW75RrPLDHBv2laXemIsu-8wZzHzQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "c441b922-8b09-4926-9076-b1374996d0ef",
+			"name": "计算节油减排",
+			"url": "localhost:8081/api/tbox/savingCO2AndC",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2ODY5MzU5fQ.TPaOLk_6Xl9lRiczY3-MVZlsUl7novGS5kwutZgio74V3XOQMF_KH_oM7Jfu-9L1bSwLzJhXlZwDwnlI8izZSw"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c4425c7d-059a-4c64-85a2-78193597ca74",
+			"name": "将经纬度转换为具体位置",
+			"url": "localhost:8081/tbox/status/getProvince",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2OTU4OTYzfQ.JB2o_YNF3tPzgvAhQx6Ept7Ynwy0tMIpMJGY6WjDitUknBzYYG7MoBi6nChzb31cmpGSzFs2pSMINMIQJONdhQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"longitude\":\"120.161003\",\n\t\"latitude\":\"30.375783\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c69d2d47-3f2e-4441-8548-6634ace10b2e",
+			"name": "以省为维度，显示各省车辆数",
+			"url": "localhost:8081/api/tbox/statisticsVehicleProvince",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiLpobrkuLAiLCJpcCI6IjEyNy4wLjAuMSIsImlhdCI6MTU2NTkyMDY2N30.v4lfGR07D1Gavvk2pRN4bQvu4-eLVmpEmXMZKtwaxd-kduF6146QCfmUm7kjcxczOjc1Hem-BefDpZ-xHjXPJg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d1c8c8cf-945b-4522-a2b9-2f65448d244a",
+			"name": "根据车架号获取车辆实时位置的详细信息",
+			"url": "localhost:8081/api/tbox/getLocationDetailByVin",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2ODk1MjE5fQ.dpneYlaCotjVtlZKvxXVU7TVHZvaTn-FM_5CNGqqWjCgr7kt2LDU9G1s6dZUnc3QVzeLFrJNoN8931EY-olk-w"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"vin\":\"LA6NFAA15HB514840\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d3e359e6-f233-4d39-be67-4f31d889cc56",
+			"name": "接收合康Tbox数据",
+			"url": "localhost:8081/tbox/status/report",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1NzUwNDMxfQ.j5AmhcCbmZvW4pnxq4A0VMnZmZGAs3UQSZLTZ0Cpcaju7RUq46yrl9KQlMZCO8W5oDtiyo1XvZb567kDDQyA6w"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "[\n\t{\n\t\"vin\":\"11\",\n\t\"chargingState\":\"0\",\n\t\"operationMode\":\"0\",\n\t\"speed\":22.8,\n\t\"mileage\":\"148\",\n\t\"operatingState\":\"0\",\n\t\"stateOfCharge\":\"88\",\n\t\"isValid\":\"V\",\n\t\"longitude\":\"114.467224\",\n\t\"latitude\":\"30.468691\",\n\t\"recordTime\":\"2019-08-16 12:34:45\",\n\t\"status\":1,\n\t\"batteryFaultNum\":1,\n\t\"motorFaultNum\":1,\n\t\"engineFaultNum\":1,\n\t\"otherFaultNum\":1\n\t\n\t}\n]",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d9835f1c-a072-4672-8453-c75b733d1037",
+			"name": "tbox列表页数据获取",
+			"url": "localhost:8081/api/tbox/getTboxDataList",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2OTU1MTU3fQ.ekg0maXcJeIaW7jzRJziTMqOoinh49pEEXs0cdDiZU6Ap4Iv9WEn4C1d0Tmi34IDfgnRS-NRxTugxtAf6EBW-A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"responses": [
+				{
+					"id": "e82ff131-dfa3-40e5-9e01-f1b3b5d7c744",
+					"name": "tbox列表页数据获取",
+					"status": null,
+					"mime": null,
+					"language": "json",
+					"text": "{\n    \"code\": 0,\n    \"data\": {\n        \"current\": 1,\n        \"pages\": 13,\n        \"records\": [\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 264,\n                \"isValid\": true,\n                \"latitude\": 37.461948,\n                \"licensePlate\": \"沪AD89607\",\n                \"lockStatus\": false,\n                \"longitude\": 121.366458,\n                \"mileage\": 35811,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566278118,\n                \"speed\": 0,\n                \"stateOfCharge\": 80,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 266,\n                \"isValid\": true,\n                \"latitude\": 31.185076,\n                \"licensePlate\": \"沪AD89389\",\n                \"lockStatus\": false,\n                \"longitude\": 121.422236,\n                \"mileage\": 20583,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566279851,\n                \"speed\": 0,\n                \"stateOfCharge\": 76,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 43,\n                \"isValid\": true,\n                \"latitude\": 37.287348,\n                \"licensePlate\": \"沪AD89363\",\n                \"lockStatus\": false,\n                \"longitude\": 120.836298,\n                \"mileage\": 24493,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566279291,\n                \"speed\": 0,\n                \"stateOfCharge\": 73,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"停车充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 117,\n                \"isValid\": true,\n                \"latitude\": 31.368628,\n                \"licensePlate\": \"沪AD89339\",\n                \"lockStatus\": false,\n                \"longitude\": 121.410836,\n                \"mileage\": 15985,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566232777,\n                \"speed\": 0,\n                \"stateOfCharge\": 91,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"充电完成\",\n                \"dataSource\": \"金龙\",\n                \"id\": 51,\n                \"isValid\": true,\n                \"latitude\": 38.873478,\n                \"licensePlate\": \"沪AD89335\",\n                \"lockStatus\": false,\n                \"longitude\": 116.502886,\n                \"mileage\": 29779,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566256379,\n                \"speed\": 0,\n                \"stateOfCharge\": 100,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 217,\n                \"isValid\": true,\n                \"latitude\": 37.500053,\n                \"licensePlate\": \"沪AD89327\",\n                \"lockStatus\": false,\n                \"longitude\": 121.191688,\n                \"mileage\": 19912,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566181211,\n                \"speed\": 34,\n                \"stateOfCharge\": 55,\n                \"status\": \"耗电\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"充电完成\",\n                \"dataSource\": \"金龙\",\n                \"id\": 168,\n                \"isValid\": true,\n                \"latitude\": 37.569886,\n                \"licensePlate\": \"沪AD89322\",\n                \"lockStatus\": false,\n                \"longitude\": 121.125288,\n                \"mileage\": 17876,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566232809,\n                \"speed\": 0,\n                \"stateOfCharge\": 100,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"停车充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 236,\n                \"isValid\": true,\n                \"latitude\": 24.595065,\n                \"licensePlate\": \"沪AD89257\",\n                \"lockStatus\": false,\n                \"longitude\": 118.102848,\n                \"mileage\": 25744,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566222063,\n                \"speed\": 0,\n                \"stateOfCharge\": 88,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"停车充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 75,\n                \"isValid\": true,\n                \"latitude\": 39.936418,\n                \"licensePlate\": \"沪AD87699\",\n                \"lockStatus\": false,\n                \"longitude\": 116.904708,\n                \"mileage\": 34893,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566280136,\n                \"speed\": 0,\n                \"stateOfCharge\": 98,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"充电完成\",\n                \"dataSource\": \"金龙\",\n                \"id\": 37,\n                \"isValid\": true,\n                \"latitude\": 38.873663,\n                \"licensePlate\": \"沪AD87697\",\n                \"lockStatus\": false,\n                \"longitude\": 116.502865,\n                \"mileage\": 30191,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566232748,\n                \"speed\": 0,\n                \"stateOfCharge\": 100,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 189,\n                \"isValid\": true,\n                \"latitude\": 39.582061,\n                \"licensePlate\": \"沪AD87678\",\n                \"lockStatus\": false,\n                \"longitude\": 116.760041,\n                \"mileage\": 29632,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566180562,\n                \"speed\": 0,\n                \"stateOfCharge\": 48,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"充电完成\",\n                \"dataSource\": \"金龙\",\n                \"id\": 122,\n                \"isValid\": true,\n                \"latitude\": 31.292828,\n                \"licensePlate\": \"沪AD87627\",\n                \"lockStatus\": false,\n                \"longitude\": 121.556175,\n                \"mileage\": 29239,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566230738,\n                \"speed\": 0,\n                \"stateOfCharge\": 100,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"停车充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 53,\n                \"isValid\": true,\n                \"latitude\": 39.636065,\n                \"licensePlate\": \"沪AD87621\",\n                \"lockStatus\": false,\n                \"longitude\": 118.034935,\n                \"mileage\": 34648,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566231731,\n                \"speed\": 0,\n                \"stateOfCharge\": 89,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 294,\n                \"isValid\": true,\n                \"latitude\": 38.280281,\n                \"licensePlate\": \"沪AD87609\",\n                \"lockStatus\": false,\n                \"longitude\": 116.810918,\n                \"mileage\": 28581,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566280165,\n                \"speed\": 46,\n                \"stateOfCharge\": 78,\n                \"status\": \"耗电\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"充电完成\",\n                \"dataSource\": \"金龙\",\n                \"id\": 215,\n                \"isValid\": true,\n                \"latitude\": 36.148176,\n                \"licensePlate\": \"沪AD87383\",\n                \"lockStatus\": false,\n                \"longitude\": 120.462756,\n                \"mileage\": 39264,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566107692,\n                \"speed\": 0,\n                \"stateOfCharge\": 100,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 228,\n                \"isValid\": true,\n                \"latitude\": 24.486675,\n                \"licensePlate\": \"沪AD87376\",\n                \"lockStatus\": false,\n                \"longitude\": 118.027303,\n                \"mileage\": 31866,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566179197,\n                \"speed\": 0,\n                \"stateOfCharge\": 86,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"停车充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 71,\n                \"isValid\": true,\n                \"latitude\": 37.180828,\n                \"licensePlate\": \"沪AD87350\",\n                \"lockStatus\": false,\n                \"longitude\": 122.092795,\n                \"mileage\": 34986,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566228543,\n                \"speed\": 0,\n                \"stateOfCharge\": 62,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"充电完成\",\n                \"dataSource\": \"金龙\",\n                \"id\": 195,\n                \"isValid\": true,\n                \"latitude\": 24.528058,\n                \"licensePlate\": \"沪AD87313\",\n                \"lockStatus\": false,\n                \"longitude\": 117.981685,\n                \"mileage\": 34098,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566232070,\n                \"speed\": 0,\n                \"stateOfCharge\": 100,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"未充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 244,\n                \"isValid\": true,\n                \"latitude\": 24.538053,\n                \"licensePlate\": \"沪AD87283\",\n                \"lockStatus\": false,\n                \"longitude\": 118.102718,\n                \"mileage\": 30100,\n                \"operatingState\": \"车辆启动\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566279350,\n                \"speed\": 0,\n                \"stateOfCharge\": 55,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            },\n            {\n                \"chargingState\": \"停车充电\",\n                \"dataSource\": \"金龙\",\n                \"id\": 56,\n                \"isValid\": true,\n                \"latitude\": 38.28427,\n                \"licensePlate\": \"沪AD87271\",\n                \"lockStatus\": false,\n                \"longitude\": 116.92535,\n                \"mileage\": 21003,\n                \"operatingState\": \"熄火\",\n                \"operationMode\": \"纯电\",\n                \"recordTime\": 1566231218,\n                \"speed\": 0,\n                \"stateOfCharge\": 44,\n                \"status\": \"关闭\",\n                \"vin\": \"\"\n            }\n        ],\n        \"searchCount\": true,\n        \"size\": 20,\n        \"total\": 256\n    },\n    \"serverTime\": 1566280225164,\n    \"message\": \"成功\"\n}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"requestObject": {
+						"data": [],
+						"dataMode": "raw",
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"type": "text"
+							}
+						],
+						"method": "POST",
+						"pathVariableData": [],
+						"queryParams": [],
+						"url": "localhost:8081/api/tbox/getTboxDataList",
+						"rawModeData": "{\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\",\n\t\"licensePlate\":\"\",\n\t\"dataSource\":\"1\",\n\t\"lockStatus\":\"\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 20\n\t}\n}"
+					},
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY2MjgwMjI0fQ.xCHLrpJBnRW0SfhoBLPdhXjMb_J1fWdGfQNjKwl2nhowAUexFwJosbqKLkAUVq1ZeBqP0ZIqqbd6Mu38oKAEEQ"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "8484"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2019 05:50:25 GMT"
+						}
+					],
+					"cookies": null,
+					"request": "d9835f1c-a072-4672-8453-c75b733d1037",
+					"collection": "a64a04b8-45c3-428e-8d9a-95b74112dd2e"
+				}
+			],
+			"rawModeData": "{\n\t\"orgId\":\"\",\n\t\"networksId\":\"\",\n\t\"operationStatus\":\"\",\n\t\"licensePlate\":\"\",\n\t\"dataSource\":\"\",\n\t\"lockStatus\":\"true\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 20\n\t}\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e5dac796-2bfe-474d-a659-e19a9c2c23cd",
+			"name": "给合康发送指令",
+			"url": "localhost:8081/tbox/status/sendCmdToTbox",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzM3OTU5fQ.wTYhsBlhBx8rNFvQ3P5KLTvU3HOcARTKbv3GxCz_vhDuP6aEBZsRjpym5IwOTsrwZCTqKnOiVF7z-FouegFJ5Q"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"vin\":\"LA6NFAA15HB514840\",\n\t\"cmd\":\"lock\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

@@ -1,0 +1,486 @@
+{
+	"id": "9ae624df-d171-43e9-9762-d034c43b03b6",
+	"name": "dict",
+	"description": "",
+	"auth": null,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c4cf1fe1-d8b7-49fb-896d-3604235652d3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b09d9673-adaf-4453-ae0d-7bbfd7d43ac5",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variables": [],
+	"order": [
+		"169e394a-67fd-464b-b512-9243169f4a35",
+		"64fe96f5-ec9f-453e-a834-d60146f32afa",
+		"78510e2e-81f7-44dd-b9ad-66da77fbabb5",
+		"3549c1be-4ef7-4f9b-ad6e-82d7c372015f",
+		"600fb6a3-1ef3-4b2a-aacc-6026334e8587",
+		"11ba5546-e5ca-4568-a3f4-2b335e880732",
+		"af30b723-fbda-4629-9304-c07720a34d4e",
+		"40a8eecf-1533-47a7-a5a5-2387c7f97da1",
+		"3a672528-245f-49a0-8e7c-d613e1cbc814",
+		"32449dae-7433-46ff-b226-c153a6f469f8",
+		"3c44be2b-f68e-4c23-94cd-5ded9cca49cc",
+		"d4d02e84-b6ca-48d3-9b26-6d159343025a",
+		"439aa2f2-b604-47c7-be6c-5d11bb84f0c8",
+		"cd6a4ad2-e23b-4522-a5e8-0d00014a882c"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "11ba5546-e5ca-4568-a3f4-2b335e880732",
+			"name": "根据id删除Dict",
+			"url": "localhost:8080/magic-rabbit-admin/api/dict/deleteById",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU0MzUxNzA5LCJpYXQiOjE1NTQzNDg3MDl9.lBh8djV0RVzk9LH3NQuhJxMZLB7FHUPM6kSI24CNWuCs_lHfxEc770AHaDmMIMzLI1htbo23Y5Qk9Ns-ozhf8A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":8\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "169e394a-67fd-464b-b512-9243169f4a35",
+			"name": "登陆",
+			"url": "localhost:8081/auth/login",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n  \"password\": \"8e53166f68445dcd754537c3b142dd49\",\n  \"username\": \"admin\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "32449dae-7433-46ff-b226-c153a6f469f8",
+			"name": "dict_data 排序",
+			"url": "localhost:8081/api/dictData/updateSort",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n \"reqVOS\":[\n \t{\"id\":10,\"sort\":0},\n \t{\"id\":9,\"sort\":1},\n \t{\"id\":11,\"sort\":2}\n ]\n}\n",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3549c1be-4ef7-4f9b-ad6e-82d7c372015f",
+			"name": "增加Dict方法",
+			"url": "localhost:8081/api/dict/addDict",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU1MDM3Nzc4LCJpYXQiOjE1NTUwMzQ3Nzh9.zUFVguH3aQocMp0B2XLgyAPdh3LR7hfnuj8hHKnfP0zmQbxfxnZXB4VUT5AKUrAb2PF2Fi9l1p9KYoD__6dK9A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"code\":\"IS_OPERATION\",\n\t\"name\":\"是否运营中\",\n\t\"sort\":\"9\",\n\t\"remark\":\"1:是,0:否\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3a672528-245f-49a0-8e7c-d613e1cbc814",
+			"name": "增加DictData",
+			"url": "localhost:8081/api/dictData/addDictData",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU3Mzk1NTE0LCJpYXQiOjE1NTczOTI1MTR9.A_St3m0T1iE_8IZr-sVY5Zce3StO3CNyJ2BQTu8GK_GIZdTHYMpKguJX2H5_4RAWSUNJt64EnPPEFuwmWefhnA"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"dictCode\":\"IS_OPERATION\",\n\t\"name\":\"否\",\n\t\"code\":\"0\",\n\t\"sort\":\"2\",\n\t\"remark\":\"无\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "3c44be2b-f68e-4c23-94cd-5ded9cca49cc",
+			"name": "根据id查询",
+			"url": "localhost:8080/api/dict/findById",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU1NjQyMjA3LCJpYXQiOjE1NTU2MzkyMDd9.UC6vlA-JULcdvZERZVNPtGhyk5iVWSkpKDLy0XgnAi6H-4HB2tA7H6DkQ670msryrMZOGX5NYnxdpI8EHppPUg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":8\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "40a8eecf-1533-47a7-a5a5-2387c7f97da1",
+			"name": "根据id删除DictData",
+			"url": "localhost:8080/magic-rabbit-admin/api/dictData/deleteById",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTUzNzczNjEyLCJpYXQiOjE1NTM3NzA2MTJ9.x6jCINSvLZWD1LR57NisL--sbgy0JjGI6ljAgG7wvojeE-7FQmYDUd7pOqMHx4r1rZNNad-xSNcQRcxDe-oU2Q"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "439aa2f2-b604-47c7-be6c-5d11bb84f0c8",
+			"name": "http://localhost:8081/api/front/wx/getConfig?url=\"\"",
+			"url": "http://localhost:8081/api/front/wx/getConfig?url=\"\"",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "url",
+					"value": "\"\"",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "600fb6a3-1ef3-4b2a-aacc-6026334e8587",
+			"name": "修改Dict",
+			"url": "localhost:8081/api/dict/updateDict",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU1MDM3Nzc4LCJpYXQiOjE1NTUwMzQ3Nzh9.zUFVguH3aQocMp0B2XLgyAPdh3LR7hfnuj8hHKnfP0zmQbxfxnZXB4VUT5AKUrAb2PF2Fi9l1p9KYoD__6dK9A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":7,\n\t\"code\":\"SEX\",\n\t\"name\":\"性别\",\n\t\"sort\":\"1\",\n\t\"remark\":\"无\"\n\t\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "64fe96f5-ec9f-453e-a834-d60146f32afa",
+			"name": "分页查询Dicts",
+			"url": "localhost:8081/api/dict/pageDictList",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU3NDgyNzgzLCJpYXQiOjE1NTc0Nzk3ODN9.NEOPKV5ieF7UpX23h0ixcKgEKlkZhAeYSDyYtVNRFMrGmePeg-MLs6Gg_cSFy43gYppm2SQXCGY0E86llGPEXQ",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY0NzI2MDE5fQ.EVkvlEupA3I6NLHTLhvRzvgVIo_8B5GbZSJ5hDZveL9mvc8V5ghECEjMw-HfySzUf9T9hQhnUu6889XvNsKmPw"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"别\",\n\t\"code\":\"s\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 20\n\t}\n}",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU3NDgyNzgzLCJpYXQiOjE1NTc0Nzk3ODN9.NEOPKV5ieF7UpX23h0ixcKgEKlkZhAeYSDyYtVNRFMrGmePeg-MLs6Gg_cSFy43gYppm2SQXCGY0E86llGPEXQ\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "78510e2e-81f7-44dd-b9ad-66da77fbabb5",
+			"name": "根据dictcode查询dictData",
+			"url": "localhost:8081/api/dictData/findByDictCode",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU3Mzk4NDgyLCJpYXQiOjE1NTczOTU0ODJ9.iFduONv3zBq3oRVOVk3j74Z-hxchHuFti3ZtC-QgxM951ltMD3rK5_VqLI9eu4qTrXh_MeQmrdGTGP76LWWl4A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"dictCode\":\"SEX\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "af30b723-fbda-4629-9304-c07720a34d4e",
+			"name": "更新DictData数据",
+			"url": "localhost:8081/api/dictData/updateDictData",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0MSIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU0Nzk0Nzg4LCJpYXQiOjE1NTQ3OTE3ODh9.SbucpdaJ0bXrtEYlwhxzrY4ikZus-QTZ4RNnmZ4N_X4bXO7uvlcGLiQ1bcKhlyr8Ce2Qze7r-MUvIfN4IdMndA"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":9,\n\t\"dictCode\":\"SEX1\",\n\t\"name\":\"男\",\n\t\"sort\":\"1\",\n\t\"code\":\"SEX_1\",\n\t\"remark\":\"无\"\n\t\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cd6a4ad2-e23b-4522-a5e8-0d00014a882c",
+			"name": "根据dictCode批量查询字典数据",
+			"url": "localhost:8080/api/dictData/batchQueryByCode",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYwMTU4MDEwLCJpYXQiOjE1NjAxNTUwMTB9.GXUPy5NRW5GxNVVON8AlFJrFvmVrAIt9nexVnDcvAOIx2b88XMwySmCAIztlVZZIQxGYcO3d3GFKRk6kDg1k5A"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"dictCodeList\":[\n\t\t\"SEX\",\"LICENSE_PLATE_TYPE\",\"LICENSE_PLATE_TYPE\"\n\t\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d4d02e84-b6ca-48d3-9b26-6d159343025a",
+			"name": "localhost:8081/api/dictData/updateSort",
+			"url": "localhost:8081/api/dictData/updateSort",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n \"reqVOS\":[\n \t{\n \t\t\"id\":9,\n \t\t\"sort\":\"1\"\n \t},\n \t{\n \t\t\"id\":10,\n \t\t\"sort\":3\t\n \t},\n \t{\n \t\t\"id\":11,\n \t\t\"sort\":5\t\n \t}\n ]\n}\n",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

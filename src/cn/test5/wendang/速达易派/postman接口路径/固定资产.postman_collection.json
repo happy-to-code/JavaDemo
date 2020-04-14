@@ -1,0 +1,154 @@
+{
+	"id": "0623a949-a40a-4ea6-8ceb-a75363499c98",
+	"name": " 固定资产",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"8db1ddcc-ba33-458d-8077-27bc6a18df3d",
+		"a6cfbad4-3ff0-4723-934a-f0f8f831b723",
+		"267cc7c7-db49-44e2-8a62-6f853077994e",
+		"e48a07bb-e07f-4ecc-9939-eb8cde0103ee"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "267cc7c7-db49-44e2-8a62-6f853077994e",
+			"name": "固定资产分页查询",
+			"url": "localhost:8081/api/fixedAssets/pageList",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4NzA5NTM3fQ.-s4V34OG8rQGenvKUPImCKjc2196JgsW2Sg23QQDBxgIxrb2LgbdVONpFNJ-w4ViiRTfZ3K6zqRbqhbhRdBwlQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 3\n\t}\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8db1ddcc-ba33-458d-8077-27bc6a18df3d",
+			"name": "固定资产新增",
+			"url": "localhost:8081/api/fixedAssets/add",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4NzA5NTM3fQ.-s4V34OG8rQGenvKUPImCKjc2196JgsW2Sg23QQDBxgIxrb2LgbdVONpFNJ-w4ViiRTfZ3K6zqRbqhbhRdBwlQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"assetNo\":123,\n\t\"licensePlate\":\"test122\",\n\t\"assetTransferTypes\":\"LEASE\",\n\t\"residualRate\":8,\n\t\"purchaseDate\":\"2019-09-06 19:48:49\",\n\t\"storageDate\":\"2019-09-06 19:48:48\",\n\t\"originalValue\":200.58,\n\t\"newRate\":12,\n\t\"netValue\":100.69\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a6cfbad4-3ff0-4723-934a-f0f8f831b723",
+			"name": "固定资产编辑",
+			"url": "localhost:8081/api/fixedAssets/edit",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4NzEzNDU1fQ.N3LmEw7opHOwC0jTw3TzSRRNhB11uH0srFAU9laLnz19xo4TvPFWfT-lRU_2sdL6DLS-WkT0SN1tuiCEBNDleg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":30,\n\t\"assetNo\":12355,\n\t\"licensePlate\":\"test122\",\n\t\"assetTransferTypes\":\"LEASE\",\n\t\"residualRate\":8,\n\t\"purchaseDate\":\"2019-09-06 19:48:49\",\n\t\"storageDate\":\"2019-09-06 19:48:48\",\n\t\"originalValue\":200.58,\n\t\"newRate\":12,\n\t\"netValue\":100.69\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e48a07bb-e07f-4ecc-9939-eb8cde0103ee",
+			"name": "根据id查询",
+			"url": "localhost:8081/api/fixedAssets/detail",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4NzEzNDU1fQ.N3LmEw7opHOwC0jTw3TzSRRNhB11uH0srFAU9laLnz19xo4TvPFWfT-lRU_2sdL6DLS-WkT0SN1tuiCEBNDleg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":30\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}

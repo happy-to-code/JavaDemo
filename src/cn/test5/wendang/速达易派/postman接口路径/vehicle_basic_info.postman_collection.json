@@ -1,0 +1,458 @@
+{
+	"id": "3023119b-2dc6-4a92-bfb2-51563fe73c7c",
+	"name": "vehicle_basic_info",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"977f163d-e0cf-4b5a-be63-8eb948c4a622",
+		"6d267bcf-95ab-465b-a216-8917a4900f07",
+		"c55394fd-0cf9-46e5-ad92-a2b889af325f",
+		"87f562cb-5180-4429-abd3-2717d79ad13f",
+		"6cbcd8e9-62e2-4439-a775-b50deef21f8a",
+		"5a2e00df-7335-4e4b-927f-0f96df857189",
+		"ef9fcf2e-9095-47a9-92d8-743748924507",
+		"45744fd1-21f8-4e34-a5a9-86f5ec0be087",
+		"8579f9c3-a59f-4bb8-924c-4b2e215c9a64",
+		"26dc965c-18a4-46c7-89ca-e99deb2e124f",
+		"09962a1a-85fc-4f14-ae4f-a445f456ea82",
+		"adfe8e51-8f57-4772-8a24-97d8c01b886d",
+		"67321a9f-b7d1-4313-8daf-4fa49331ec23"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "09962a1a-85fc-4f14-ae4f-a445f456ea82",
+			"name": "查询当前商户下可分配的车辆",
+			"url": "localhost:8081/api/vehicleInfo/vehicleDistribution",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTYzOTUwMzIyfQ.AFJGtpvlY_PejpXfrpjkBxE5KcC7P4RP6eQEwugVuuy0FdHOFb_-3vJN12C_cmLF_byaLd3DJ_xCBSkq0zZ2uw"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"certificateNumber\":\"\",\n\t\"issueDate\":\"\",\n\t\"vehicleCompany\":\"\",\n\t\"vehicleBrand\":\"\",\n\t\"vehicleName\":\"\",\n\t\"vehicleModel\":\"\",\n\t\"orgId\":\"\",\n\t\"licensePlate\":\"\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "26dc965c-18a4-46c7-89ca-e99deb2e124f",
+			"name": "联想查询车牌号码",
+			"url": "localhost:8081/api/vehicleInfo/getLicensePlate",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU5MTIzODM1LCJpYXQiOjE1NTkxMjA4MzV9.Kc2QxljS29EkHkrQRBCdZyjIwNqFMY-mgZ3tNN87QgHqefqidpmfnviAl6XEXpeVmfvip2eYVcv_jciskwUoeg"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"1\",\n\t\"licensePlate\":\"\",\n\t\"limitNum\":\"5\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "45744fd1-21f8-4e34-a5a9-86f5ec0be087",
+			"name": "微信获取sdk接口",
+			"url": "localhost:8081/api/front/wx/getConfig?url=\"\"",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "url",
+					"value": "\"\"",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "5a2e00df-7335-4e4b-927f-0f96df857189",
+			"name": "根据id查询vehicle信息",
+			"url": "localhost:8081/api/vehicleInfo/findVehicleInfoById",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzUxNjg4fQ.A7tQW-EUYikUOyvOMas4PHvpZi7oPwgvB2dqI6AcIuU2yuKXFGEg3m9lTh8-XgAxYYiZzTk62zeT6RPB0OCqIQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":16574\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "67321a9f-b7d1-4313-8daf-4fa49331ec23",
+			"name": "车辆转移",
+			"url": "localhost:8081/api/vehicleInfo/vehicleTransfer",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTYzOTUxODY0fQ.Q4TAw4GcSnZelwPKJr3w9z1DQpd9hJS6MSNT6FJiU_MYuWD9JPBUqVuqL7XiViXwLOwCU1MDOIw2UfBJH_FPkA"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"networksId\":1,\n\t\"vehicleIds\":[\n\t\t1\n\t\t\n\t\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6cbcd8e9-62e2-4439-a775-b50deef21f8a",
+			"name": "分页查询vehicle信息",
+			"url": "localhost:8081/api/vehicleInfo/vehiclePageInfo",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzUxNjg4fQ.A7tQW-EUYikUOyvOMas4PHvpZi7oPwgvB2dqI6AcIuU2yuKXFGEg3m9lTh8-XgAxYYiZzTk62zeT6RPB0OCqIQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"certificateNumber\":\"\",\n\t\"issueDate\":\"\",\n\t\"vehicleCompany\":\"\",\n\t\"vehicleBrand\":\"\",\n\t\"vehicleName\":\"\",\n\t\"vehicleModel\":\"\",\n\t\"orgId\":\"1\",\n\t\"licensePlate\":\"\",\n\t\"operationStatus\":\"OPERATION_STATUS_1\",\n\t\"customerName\":\"五\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 10\n\t}\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6d267bcf-95ab-465b-a216-8917a4900f07",
+			"name": "更新车俩信息",
+			"url": "localhost:8081/api/vehicleInfo/updateVehicleInfo",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzUxNjg4fQ.A7tQW-EUYikUOyvOMas4PHvpZi7oPwgvB2dqI6AcIuU2yuKXFGEg3m9lTh8-XgAxYYiZzTk62zeT6RPB0OCqIQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":17647,\n\t\"licensePlate\":\"沪833812\",\n\t\"certificateNumber\":\"345622211876\",\n\t\"issueDate\":\"2019-04-16 13:50:40\",\n\t\"vehicleCompany\":\"东风汽车制造公司\",\n\t\"customerName\":\"五一\",\n\t\"vehicleBrand\":\"东风\",\n\t\"vehicleName\":\"东风3代\",\n\t\"vehicleModel\":\"EQ504563489\",\n\t\"vehicleIdentCode\":\"LDPGABA2210371QQBM\",\n\t\"vehicleBodyColor\":\"白色\",\n\t\"chassisModel\":\"WAC2981342\",\n\t\"chassisId\":\"78998121\",\n\t\"chassisCertificateNumber\":\"78999212001\",\n\t\"engineModel\":\"TZ35Oxshk60\",\t\n\t\"engineNumber\":\"VKDDO170222\",\n\t\"fuelType\":\"电\",\n\t\"engineDisplacement\":1,\n\t\"enginePower\":120,\n\t\"emissionStandard\":\"--\",\n\t\"oilConsumption\":9,\n\t\"outerLength\":5995,\n\t\"outerWidth\":2200,\n\t\"outerHeight\":3030,\n\t\"insideContainerLength\":4150,\n\t\"insideContainerWidth\":2050,\n\t\"insideContainerHeight\":2000,\n\t\"numberOfLeafSprings\":\"3/3\",\n\t\"tyreNumber\":6,\n\t\"tyreType\":\"6.5OP16C 10PR\",\n\t\"wheelGaugeFront\":1546,\t\n\t\"wheelGaugeBack\":1495,\n\t\"wheelbase\":3346,\n\t\"axleLoad\":\"1800/2695\",\n\t\"axleNumber\":2,\n\t\"steeringForm\":\"方向盘\",\n\t\"totalMass\":4495,\n\t\"curbMass\":3060,\n\t\"ratedLoadMass\":1305,\t\n\t\"payloadUsage\":0.47,\n\t\"totalQuasiTractionMass\":45,\n\t\"semitrailerSaddleMaxTotalMass\":50,\n\t\"cabPassengerNumber\":3,\n\t\"seatingCapacity\":3,\n\t\"maxDesignSpeed\":95,\n\t\"vehicleCreateTime\":\"2019-04-18 13:50:40\",\n\t\"remarks\":\"测试参数\",\n\t\"vehicleDetail\":\"测试测试测试！！0098！\",\n\t\"certificatePicUrl\":null,\n\t\"orgId\":2\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8579f9c3-a59f-4bb8-924c-4b2e215c9a64",
+			"name": "根据车辆id获取二维码",
+			"url": "localhost:8081/api/vehicleInfo/getQRCodeByVehicleId",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU4NDM5MTgwLCJpYXQiOjE1NTg0MzYxODB9.ym48xY4vTsgFYaZ8gk92s2gDvUJwG1IjSn1_gaq4wke49dLIHfMJneB1zgnIbid3KY-UY97krfMimCPjo6LwsA"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"vehicleId\":35\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "87f562cb-5180-4429-abd3-2717d79ad13f",
+			"name": "根据id删除vehicle信息",
+			"url": "localhost:8081/api/vehicleInfo/delVehicleInfoById",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY0NjM5MDk1fQ.B4kPaLh3Vm9yn1C9yTMNENTrWWvQgMF99VUMkvr6G2nXNC8x5Ds56twMORUv9U0rDM8H2jb6SAv4zxuMH2A2qw"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"id\":16688\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "977f163d-e0cf-4b5a-be63-8eb948c4a622",
+			"name": "增加vehicle信息",
+			"url": "localhost:8081/api/vehicleInfo/addVehicleInfo",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzUxNjg4fQ.A7tQW-EUYikUOyvOMas4PHvpZi7oPwgvB2dqI6AcIuU2yuKXFGEg3m9lTh8-XgAxYYiZzTk62zeT6RPB0OCqIQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n\t\"licensePlate\":\"沪833123Q\",\r\n\t\"licensePlateIsTemp\":\"\",\r\n\t\"vehicleModel\":\"EQ504563489\",\r\n\t\"certificateNumber\":\"\",\r\n\t\"customerName\":\"五一\",\r\n\t\"issueDate\":\"2019-04-16 13:50:40\",\r\n\t\"vehicleCompany\":\"东风汽车制造公司\",\r\n\t\"vehicleBrand\":\"东风\",\r\n\t\"vehicleName\":\"东风二代\",\r\n\t\"vehicleIdentCode\":\"LDPGABA221037mmQ\",\r\n\t\"vehicleBodyColor\":\"白色\",\r\n\t\"chassisModel\":\"WAC2981342\",\r\n\t\"chassisId\":\"78998121\",\r\n\t\"chassisCertificateNumber\":\"78999212001\",\r\n\t\"engineBrand\":\"\",\r\n\t\"engineModel\":\"TZ35Oxshk60\",\t\r\n\t\"engineNumber\":\"VKDDO170222\",\r\n\t\"fuelType\":\"电\",\r\n\t\"engineDisplacement\":1,\r\n\t\"enginePower\":120,\r\n\t\"emissionStandard\":\"--\",\r\n\t\"oilConsumption\":90,\r\n\t\"outerLength\":5995,\r\n\t\"outerWidth\":2200,\r\n\t\"outerHeight\":3030,\r\n\t\"insideContainerLength\":4150,\r\n\t\"insideContainerWidth\":2050,\r\n\t\"insideContainerHeight\":2000,\r\n\t\"numberOfLeafSprings\":\"3/3\",\r\n\t\"tyreNumber\":6,\r\n\t\"tyreType\":\"6.5OP16C 10PR\",\r\n\t\"wheelGaugeFront\":1546,\t\r\n\t\"wheelGaugeBack\":1495,\r\n\t\"wheelbase\":3346,\r\n\t\"axleLoad\":\"1800/2695\",\r\n\t\"axleNumber\":2,\r\n\t\"steeringForm\":\"方向盘\",\r\n\t\"totalMass\":4495,\r\n\t\"curbMass\":3060,\r\n\t\"ratedLoadMass\":1305,\t\r\n\t\"payloadUsage\":0.47,\r\n\t\"totalQuasiTractionMass\":45,\r\n\t\"semitrailerSaddleMaxTotalMass\":50,\r\n\t\"cabPassengerNumber\":3,\r\n\t\"seatingCapacity\":3,\r\n\t\"maxDesignSpeed\":95,\r\n\t\"vehicleCreateTime\":\"2019-04-18 13:50:40\",\r\n\t\"remarks\":\"测试参数\",\r\n\t\"vehicleDetail\":\"测试测试测试！！！\",\r\n\t\"certificatePicUrl\":\"static/test/1358882cd\",\r\n\t\"orgId\":2\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "adfe8e51-8f57-4772-8a24-97d8c01b886d",
+			"name": "获取所有的车牌----enclosure",
+			"url": "localhost:8081/api/vehicleInfo/getAllLicensePlate",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyOTAwMzIxLCJpYXQiOjE1NjI4OTczMjF9.XdeM74NXUW54HYg9lC5mJjSRjr7pAop6_YHBVHU2InTZIA72pWn-28aTenAc2lIvnr9DIYZbDpYNxQSQlX3zWw"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"1\",\n\t\"operationStatus\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c55394fd-0cf9-46e5-ad92-a2b889af325f",
+			"name": "将车辆批量更新到所属组织",
+			"url": "localhost:8081/api/vehicleInfo/batchUpdateVehOrg",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU2MDAzMDQwLCJpYXQiOjE1NTYwMDAwNDB9.82GYjlHjmoaom6eL7FuA5S8O5VSYPTjyuA4FZmzkXzNz5lssu6VqjsMxdFySzPu849Ir5HZqFXnJkgmM1Zxvaw"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"vehId\":[1,2],\n\t\"orgId\":null\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ef9fcf2e-9095-47a9-92d8-743748924507",
+			"name": "查询品牌列表",
+			"url": "localhost:8081/api/vehicleInfo/getAllBrand",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTU5MjA5ODk4LCJpYXQiOjE1NTkyMDY4OTh9.t4VYXXlocmOL9LMq7hqExGbzgchn0YbfxH8-6NhEa3SSxgmEBNt4H4e__DRpaaYCaiWcfcnnqGzXutISwoW6RA"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"orgId\":\"1\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
