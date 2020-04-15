@@ -1,0 +1,2182 @@
+{
+	"id": "27caf2e4-94ab-4883-9279-e5a8e1fd439d",
+	"name": "诺亚第royalty",
+	"description": null,
+	"auth": null,
+	"events": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8cdd7051-494f-4dd4-85e0-d9de9f8da425",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b0b04528-6533-4400-8391-2ed19e10a900",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variables": [],
+	"order": [
+		"38cbccbc-bc86-48e1-826e-db477219928f",
+		"8124d94f-5f37-4084-93d4-43138dcb33ea",
+		"a263342b-ff06-4bdf-ae5c-53f2778a94ae",
+		"864a5d4f-71cd-44e3-ba1c-c424d3e15e6d",
+		"fbe9fbb9-adff-47b5-8ac7-c753f6b9c2ca",
+		"b3146023-286b-4806-bfc9-d0fbf58ff31c",
+		"4b660980-d42f-4d63-b1cf-457fa2988849",
+		"334b75e5-4f70-4672-9648-914e8f578961",
+		"3b5717b2-02a5-4d1b-b7f2-a19ac6518549",
+		"b752cec7-d467-4b29-92fe-67e02cdd5410",
+		"555e9149-ba2e-45f7-95a8-3b92b1e20944"
+	],
+	"folders_order": [
+		"5e0f2b35-3bfd-4c27-a542-ea360d87e7d6",
+		"51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+		"aae9acd9-bd9c-4fbd-953a-d2128212460a",
+		"7e95c3b5-c694-4de3-bff0-67cb3c77bc19"
+	],
+	"folders": [
+		{
+			"id": "5e0f2b35-3bfd-4c27-a542-ea360d87e7d6",
+			"name": "\b诺亚第大使",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "27caf2e4-94ab-4883-9279-e5a8e1fd439d",
+			"folder": null,
+			"order": [
+				"1cb5e4ca-d9b2-43ac-bae7-21f8101762c3",
+				"ec218499-e3a7-4e8d-b37b-021e1b080e9a",
+				"093a500c-f2bc-4726-807a-79ab887cd3aa",
+				"d76d77fd-7151-445e-a956-7de000bd01c0"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"name": "member",
+			"description": "",
+			"auth": null,
+			"events": null,
+			"collection": "27caf2e4-94ab-4883-9279-e5a8e1fd439d",
+			"folder": null,
+			"order": [
+				"1d488d7c-f655-4dcd-989f-0aaabc318313",
+				"60a5be53-4326-4c72-a10e-746f1f4ad112",
+				"076e5c54-0fba-4c70-9415-376eef8d6844",
+				"f73334d7-1034-482e-a181-ac2084c2bb66",
+				"5480b83d-8470-417b-98e9-e76a7f034406",
+				"d2a4458a-ac02-4504-8bae-641b26dd0099",
+				"45eda5da-b462-49d2-a9c9-b53fb7b64540",
+				"6b6a612b-904b-4e1b-9af0-06ad4df16159",
+				"84328bb8-6b1c-4112-ac19-7c0310daa761",
+				"64ac30ae-44fd-46a0-b9f7-f5f96fae898c",
+				"46e4b3df-fc53-4c78-8e9b-07306053fdcf",
+				"ff2d7280-0406-4d50-bce5-33eb2a87ae2d",
+				"0f2c918c-9d4e-42d4-932d-cebe85b131d8",
+				"60447171-e44d-410d-848c-d7b8660b2e57",
+				"f200af51-d264-460b-a7b8-588be4d0dfaf",
+				"8be7d2cd-6ab0-4dc4-908e-076e80ebaef1",
+				"145da64b-d6c2-4f6c-be13-5932d8c157fa",
+				"59606d47-f62c-438e-8afe-32e9c1b96f62",
+				"5286b3b1-d0c2-4662-b834-1dd86442e767",
+				"83f14938-a148-4b67-8c93-3ff54dfa56bc",
+				"d03bb2ee-7e9f-4f12-bee9-128271c55d49",
+				"55a93e6d-f147-432d-97b5-16183d8aa2d0",
+				"b6bdd5c4-52f5-4b4e-9ea0-3f28d3d3ec56"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"name": "后台-课程详情",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "27caf2e4-94ab-4883-9279-e5a8e1fd439d",
+			"folder": null,
+			"order": [
+				"a462e0ea-4743-479b-b724-d40f4edc7b9d",
+				"cc7236dc-dc59-4a69-b5f4-fb86ed7edd1c",
+				"97f0899f-da44-46dd-9693-b0b46caa60e5",
+				"a3d1fad1-1c82-4f97-b2e0-93123c524932",
+				"af8a2f77-b0bc-4b10-8ffe-5ed4e6584099",
+				"997327c8-dd70-46fb-a81c-a1b6fd2c6d2b",
+				"07ae2e43-2d6c-4912-af22-3a7bfe413e69",
+				"5a73ce96-7898-426a-8d6b-4911915c0b19",
+				"bbbe6723-002f-413f-ab70-c73c60a506c7"
+			],
+			"folders_order": []
+		},
+		{
+			"id": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"name": "积分",
+			"description": null,
+			"auth": null,
+			"events": null,
+			"collection": "27caf2e4-94ab-4883-9279-e5a8e1fd439d",
+			"folder": null,
+			"order": [
+				"014419d7-43c4-449c-9d62-7f9875c77070",
+				"03a908a9-614b-4629-be1c-4071655486d9",
+				"2c2b01fc-f6e3-4aa3-82ba-d45938cd3210",
+				"4ea68648-68b7-41ef-ae7e-ac9b4eff57c5",
+				"008f84f2-a05b-4ff3-a58b-b6caccf5a74c",
+				"65c73c8a-fa79-4cd8-828c-6890945bb39d",
+				"2d8e2394-8591-4957-b983-8efbaf954c2d",
+				"8e4b53e8-4a60-4519-803f-7bf68cdf47b1",
+				"a972fbfd-2db2-4e40-a0c7-462e5ad65a98",
+				"6501acdb-d32c-4878-9512-b566727d7dd9",
+				"35fddf65-74cf-4386-bcce-dae87817755f",
+				"dad50280-8177-4946-816d-a3cad47bba57"
+			],
+			"folders_order": []
+		}
+	],
+	"requests": [
+		{
+			"id": "008f84f2-a05b-4ff3-a58b-b6caccf5a74c",
+			"name": "1.1修改备注",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000/remark",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"rawModeData": "{\n\t\"remark\":\"123312414\"\n\t\n\t\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "014419d7-43c4-449c-9d62-7f9875c77070",
+			"name": "获取使用积分接口",
+			"url": "{{url}}cCreditsRecord/used?paegNum=1&pageSize=10",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "paegNum",
+					"value": "1"
+				},
+				{
+					"key": "pageSize",
+					"value": "10"
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "03a908a9-614b-4629-be1c-4071655486d9",
+			"name": "获取当前登陆用户积分汇总",
+			"url": "{{url}}cCreditsRecord/sum",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "076e5c54-0fba-4c70-9415-376eef8d6844",
+			"name": "校验验证码",
+			"url": "{{url}}/api/royalty/member/checkCode",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU3ODk1NzgxMX0.7go990ixLELS2Lcs_fGM6EScXLGYBh0CtVNlS61EC9R5pkNIR6AnmKpUf9TaFM88oxslL_dxBCHhd0tcFl71bw"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\n\t\"code\":\"123456\",\n\t\"userFillIn\":\"\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "07ae2e43-2d6c-4912-af22-3a7bfe413e69",
+			"name": "补缴",
+			"url": "{{url}}additionalOrders",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"rawModeData": "{\n\t\"orderId\":\"889220c96b5811e9bf4602b7e6a01cee\",\n\t\"payType\":\"银行转账\",\n\t\"payTime\":\"2019-07-03 10:00\",\n\t\"paymentAmount\":20.00,\n\t\"recipientBank\":\"tuikuanyinhang\",\n\t\"transactionCode\":\"20199099931234\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "093a500c-f2bc-4726-807a-79ab887cd3aa",
+			"name": "兑换诺亚第大使",
+			"url": "{{url}}cAmbassadors/exchange?code=CODE1",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "code",
+					"value": "CODE1"
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "5e0f2b35-3bfd-4c27-a542-ea360d87e7d6",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "0f2c918c-9d4e-42d4-932d-cebe85b131d8",
+			"name": "保存会员历史课程详情信息",
+			"url": "{{url}}/api/royalty/course/detail/saveCourseInfoDetail",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTk4MDQ4M30.rvAgD4Cqm5M-FuHp-BWmMSsp3-5RhWD3vFgbtzOyN8IMfbgcbzEErZObE5_Vd5vHjCHOl0-FsN1bv-XfTCx8BA"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\n\t\"immediatelyUpload\":false,\n\t\"courseInfoDetailDTOList\":[\n\t\t{\n\t\t\t\"memberCourseInfoId\":\"40288a7c6f9ce302016f9cee77f40000\",\n\t\t\t\"courseName\":\"拉伸运动\",\n\t\t\t\"courseCity\":\"北京\",\n\t\t\t\"courseTime\":\"2017-01 ~ 2018-02\"\n\t\t},\n\t\t\t{\n\t\t\t\"memberCourseInfoId\":\"40288a7c6f9ce302016f9cee77f40000\",\n\t\t\t\"courseName\":\"拉伸运动2222\",\n\t\t\t\"courseCity\":\"上海\",\n\t\t\t\"courseTime\":\"2018-03 ~ 2019-05\"\n\t\t}\n\t\t\n\t\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "145da64b-d6c2-4f6c-be13-5932d8c157fa",
+			"name": "获取当前用户的证书",
+			"url": "{{url}}/api/royalty/course/detail/getCertificateUrl",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjI1Mzk3MH0.s9A4BWiv3blp8ik9YsNQQ4eaA6p5x8K25Ud6zF2jm2LzzqPCeC8sGFj0ccCN2G2Cq_yUM0yMN8wvhbjL2OSOeA"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1cb5e4ca-d9b2-43ac-bae7-21f8101762c3",
+			"name": "获取当前登陆大使有效期",
+			"url": "{{url}}cAmbassadors/currentUser",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "5e0f2b35-3bfd-4c27-a542-ea360d87e7d6",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1d488d7c-f655-4dcd-989f-0aaabc318313",
+			"name": "获取验证码",
+			"url": "{{url}}/api/royalty/member/getVerificationCode/17625341118",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjI1Mzk3MH0.s9A4BWiv3blp8ik9YsNQQ4eaA6p5x8K25Ud6zF2jm2LzzqPCeC8sGFj0ccCN2G2Cq_yUM0yMN8wvhbjL2OSOeA"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "2c2b01fc-f6e3-4aa3-82ba-d45938cd3210",
+			"name": "\b1.获取积分提现列表",
+			"url": "{{url}}creditsRecords?pageSize=3&pageNum=1&studentName",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "pageSize",
+					"value": "3"
+				},
+				{
+					"key": "pageNum",
+					"value": "1"
+				},
+				{
+					"key": "studentCode",
+					"value": "20180",
+					"enabled": false
+				},
+				{
+					"key": "studentName",
+					"value": null
+				},
+				{
+					"key": "applyDateMin",
+					"value": "2019-07-10 09:59:00",
+					"enabled": false
+				},
+				{
+					"key": "applyDatemax",
+					"value": "2019-07-10 10:59:00",
+					"enabled": false
+				},
+				{
+					"key": "applyDateSort",
+					"value": "1",
+					"enabled": false
+				},
+				{
+					"key": "creditMax",
+					"value": "1",
+					"enabled": false
+				},
+				{
+					"key": "creditMin",
+					"value": "1",
+					"enabled": false
+				},
+				{
+					"key": "payAmountSort",
+					"value": "1",
+					"enabled": false
+				},
+				{
+					"key": "status",
+					"value": "1",
+					"enabled": false
+				},
+				{
+					"key": "studentPhone",
+					"value": "1",
+					"enabled": false
+				},
+				{
+					"key": "tranNo",
+					"value": null,
+					"enabled": false
+				},
+				{
+					"key": "updateDateMax",
+					"value": null,
+					"enabled": false
+				},
+				{
+					"key": "updateDateMin",
+					"value": "2019-07-10 08:59:00",
+					"enabled": false
+				},
+				{
+					"key": "updateDateSort",
+					"value": "2",
+					"enabled": false
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\n\t\"outRefundNo\":\"dasdasdqe132133\",\n\t\"refundAmount\":2,\n\t\"refundBank\":\"dabank\",\n\t\"refundTime\":\"2019-09-03 10:10:00\",\n\t\"refundType\":\"1\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "2d8e2394-8591-4957-b983-8efbaf954c2d",
+			"name": "3.通过前信息获取",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000/beforePass",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "334b75e5-4f70-4672-9648-914e8f578961",
+			"name": "定时任务兑换积分",
+			"url": "{{nyd}}creditsPools/applyToCredits",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjQ5ODIyMn0.AafDHIuq6hqwfV0S73_p4UGI9s8qOnqYti96z82MJhS9H1SBdPFfKY94x3Ob-QivbxpxKEBSoxZyDsrgTkzL1g"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "35fddf65-74cf-4386-bcce-dae87817755f",
+			"name": "7.驳回",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000/reject",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"rawModeData": "{\n\t\"tranNo\":\"123312414\",\n\t\"payTime\":\"2019-10-10 10:00:00\"\n\t\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "38cbccbc-bc86-48e1-826e-db477219928f",
+			"name": "登陆",
+			"url": "{{url}}cUsers/login?code=cs2018",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "code",
+					"value": "cs2018"
+				}
+			],
+			"auth": null,
+			"events": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2b0f70c1-c18b-42f6-99a0-dc39b7c7b357",
+						"exec": [
+							"var jsondata =pm.response.json();",
+							"pm.environment.set(\"token\",jsondata.data.tokenId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "3b5717b2-02a5-4d1b-b7f2-a19ac6518549",
+			"name": "更新学员使用诺币兑换比例",
+			"url": "{{nyd}}dictionary/students/proportion?proportion=149",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "proportion",
+					"value": "149",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjQ5ODIyMn0.AafDHIuq6hqwfV0S73_p4UGI9s8qOnqYti96z82MJhS9H1SBdPFfKY94x3Ob-QivbxpxKEBSoxZyDsrgTkzL1g"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "45eda5da-b462-49d2-a9c9-b53fb7b64540",
+			"name": "删除课程凭证图片",
+			"url": "{{url}}/api/royalty/memberCoursePic/delPic",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU3ODY5MTc0MX0.qRA1Wtqgwkn07ZuMWcgKi0PWFifO4LPwkMBafuKluPr42AJ-1gu6AJALLY13XzW3M-CwX2f36Jn4T_CQGS-uZw"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\n\t\"memberBasicInfoId\":\"tttt112131\",\n\t\"showBrowserUrl\":\"http://api.dev.nuolth.com/upload/member/course//066CF71162124ADABF521B661E03336F.jpg\",\n\t\"serverPathUrl\":\"D:/ElementWin/royaltyPic/upload/member/course/066CF71162124ADABF521B661E03336F.jpg\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "46e4b3df-fc53-4c78-8e9b-07306053fdcf",
+			"name": "获取所有视频信息",
+			"url": "{{url}}/api/royalty/videoExchange/getAllVideos",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTgyMzM2NX0.NPUsKrJ-silwCDOiyzIF1JkcVNZ7a-iFlDPeX5TwOxsBI-s4zMwtJirk9RNNwZehBR33xFaKydzXA35jmHGuwg"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "4b660980-d42f-4d63-b1cf-457fa2988849",
+			"name": "根据ID查询课程信息详情",
+			"url": "{{url}}/api/royalty/v1/courses/183976c6f47e11e9b88d00163e081163",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU3ODU0Njc2N30.XWRV2Y0OFOFQmAJYgUBhnV09nbcToLK74ro24l7mlkyfo3Z_tQ84_a9adJF3eAeGMs-Nok53hbcN7k2UOjjVyQ"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "4ea68648-68b7-41ef-ae7e-ac9b4eff57c5",
+			"name": "1.获取提现详情",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5286b3b1-d0c2-4662-b834-1dd86442e767",
+			"name": "获取当前用户的体验券信息以及视频兑换信息",
+			"url": "{{url}}/api/royalty/videoExchange/getMemberVideoExchange",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTczNDAwNn0.n6sfd3Xg1NZ7aZZbMewN-XL2ArTjeVgzYS5xh-3CYuNmpT-Vfd2e_fe1ZH7WexA87hcOENBGTupCdmbDza62dg"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "5480b83d-8470-417b-98e9-e76a7f034406",
+			"name": "会员上传图片",
+			"url": "{{url}}/api/royalty/member/uploadPic?oldPicUrl=D://ElementWin/royaltyPic/upload/member//26267B76EFE9409AB9B39F1BEA89F315.png",
+			"description": "",
+			"data": [
+				{
+					"key": "file",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "uploadPicReqVO",
+					"value": "D://ElementWin/royaltyPic/upload/member//D965C05B42A04A389D2E5070C58776D2.png",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "oldPicUrl",
+					"value": "D://ElementWin/royaltyPic/upload/member//26267B76EFE9409AB9B39F1BEA89F315.png",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU3ODk1NzgxMX0.7go990ixLELS2Lcs_fGM6EScXLGYBh0CtVNlS61EC9R5pkNIR6AnmKpUf9TaFM88oxslL_dxBCHhd0tcFl71bw"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"headers": "//Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "555e9149-ba2e-45f7-95a8-3b92b1e20944",
+			"name": "修改员工分享获取诺币兑换比例",
+			"url": "{{nyd}}dictionary/teachers/courses/proportion?proportion=1500&remark=1000000",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "proportion",
+					"value": "1500",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "1000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjQ5ODIyMn0.AafDHIuq6hqwfV0S73_p4UGI9s8qOnqYti96z82MJhS9H1SBdPFfKY94x3Ob-QivbxpxKEBSoxZyDsrgTkzL1g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "55a93e6d-f147-432d-97b5-16183d8aa2d0",
+			"name": "立即报名",
+			"url": "{{url}}/api/royalty/member/signUpImmediately",
+			"description": null,
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjA4MjM1MH0.VtmLC9jKmvs3B2xj5W7eskmRuDrR9TRFJNQNzm7s5BJoPJt7-X8JeHf5oqtUCYMIzLok3A6NV6qHlBR1Zipc3g"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "59606d47-f62c-438e-8afe-32e9c1b96f62",
+			"name": "获取目前会员可以进行的状态",
+			"url": "{{url}}/api/royalty/member/getStatus",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbVlEcTFmN1EzRXRrOTRoOEk0Uk1qdmFrcXBZIiwiYXV0aCI6IiIsImlkIjoiNTBjZWRmMTM1M2JmMTFlYWI0NjUwMDE2M2UwNmRkNjciLCJuYW1lIjoiIiwiZXhwIjoxNTgyMjYzODIxfQ.1ucyY7Gza6SHz0MMbJzd_7FCymfD6sZbM6Bc16pph_LHSs2T0QAGG8g42vU9Yfxu2OfWe2TMhkkuJ2fDJqtCUA"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5a73ce96-7898-426a-8d6b-4911915c0b19",
+			"name": "获取订单列表",
+			"url": "{{url}}orders?teachType=&courseName=&coursePriceSort=&createTimeSort=&demo=&endTime=&merchantsCode=&pageNo=1&pageSize=10&payStatus=&paymentAmountSort=&phone=&startTime=&studentName=&unableStatus=",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "teachType",
+					"value": ""
+				},
+				{
+					"key": "courseName",
+					"value": ""
+				},
+				{
+					"key": "coursePriceSort",
+					"value": ""
+				},
+				{
+					"key": "createTimeSort",
+					"value": ""
+				},
+				{
+					"key": "demo",
+					"value": ""
+				},
+				{
+					"key": "endTime",
+					"value": ""
+				},
+				{
+					"key": "merchantsCode",
+					"value": ""
+				},
+				{
+					"key": "pageNo",
+					"value": "1"
+				},
+				{
+					"key": "pageSize",
+					"value": "10"
+				},
+				{
+					"key": "payStatus",
+					"value": ""
+				},
+				{
+					"key": "paymentAmountSort",
+					"value": ""
+				},
+				{
+					"key": "phone",
+					"value": ""
+				},
+				{
+					"key": "startTime",
+					"value": ""
+				},
+				{
+					"key": "studentName",
+					"value": ""
+				},
+				{
+					"key": "unableStatus",
+					"value": ""
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "60447171-e44d-410d-848c-d7b8660b2e57",
+			"name": "补录 会员历史课程详情信息",
+			"url": "{{url}}/api/royalty/course/detail/saveCourseInfoDetailAgain",
+			"description": null,
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": null,
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbVlEcTFmN1EzRXRrOTRoOEk0Uk1qdmFrcXBZIiwiYXV0aCI6IiIsImlkIjoiYzc3YjM5NmQ1M2IwMTFlYWI0NjUwMDE2M2UwNmRkNjciLCJuYW1lIjoiIiwiZXhwIjoxNTgyMjU0OTMyfQ.V7K0-Dc7Db3k1Wukz6Ge806ZiVp1wlY-RbZWAaULAgdtcPuiCG12tLp-xTapVmWV7lRGG-SqobyyCeWf2WIMOg"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\r\n\t\"courseInfoDetailMiniVOList\": [{\r\n\t\t\"courseCity\": \"北京\",\r\n\t\t\"courseName\": \"呼吸模块一之圆肩驼背私教课\",\r\n\t\t\"courseTime\": \"2000-01~2009-01\"\r\n\t}],\r\n\t\"courseBasicInfoId\": \"8a80819c7061568e01706174c504000c\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "60a5be53-4326-4c72-a10e-746f1f4ad112",
+			"name": "获取数据字典",
+			"url": "{{url}}/api/royalty/v1/dictionary?dictionaryType=courseType",
+			"description": "",
+			"data": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "dictionaryType",
+					"value": "courseType",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU3OTEzOTEzOX0.RmZl9-SK0NeROtE26o4wZrHD75ywbFUr9Z54tu-2oQRKjktzIZzf8mZvlvRD-PaXdLTyX8EENJ_7KTU9bBoF1A"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "64ac30ae-44fd-46a0-b9f7-f5f96fae898c",
+			"name": "诺亚第礼包积分兑换",
+			"url": "{{url}}/api/royalty/integralExchange/exchange",
+			"description": null,
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": null,
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"type": "string",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTU2MTU1NX0.WwP3hUbv7gz9ozBNxKGMxeoWuckE5McCY3RidHfatpIOraI_wu3vVBKRKyjiykLEpoVl96-Yiyw58C9dZW531g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6501acdb-d32c-4878-9512-b566727d7dd9",
+			"name": "6.支付信息",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000/toPay",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"rawModeData": "{\n\t\"tranNo\":\"123312414\",\n\t\"payTime\":\"2019-10-10 10:00:00\"\n\t\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "65c73c8a-fa79-4cd8-828c-6890945bb39d",
+			"name": "2.积分提现",
+			"url": "{{url}}cCreditsRecord/toCash",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"rawModeData": "{\n\t\"outRefundNo\":\"dasdasdqe132133\",\n\t\"refundAmount\":2,\n\t\"refundBank\":\"dabank\",\n\t\"refundTime\":\"2019-09-03 10:10:00\",\n\t\"refundType\":\"1\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "6b6a612b-904b-4e1b-9af0-06ad4df16159",
+			"name": "保存会员历史课程基本信息",
+			"url": "{{url}}/api/royalty/course/saveCourseBasicInfo",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU3ODY5MTc0MX0.qRA1Wtqgwkn07ZuMWcgKi0PWFifO4LPwkMBafuKluPr42AJ-1gu6AJALLY13XzW3M-CwX2f36Jn4T_CQGS-uZw"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "[\n\t{\n\t\t\"memberBasicInfoId\":\"test1\",\n\t\t\"courseName\":\"拉伸\",\n\t\t\"courseCity\":\"北京\",\n\t\t\"courseTime\":\"2018-02~2019-08\",\n\t\t\"courseVoucherUploadFlag\":\"1\",\n\t\t\"customerServiceStatus\":true\n\t},\n\t{\n\t\t\"memberBasicInfoId\":\"test2\",\n\t\t\"courseName\":\"有氧运动\",\n\t\t\"courseCity\":\"北京\",\n\t\t\"courseTime\":\"2016-06~2020-01\",\n\t\t\"courseVoucherUploadFlag\":\"1\",\n\t\t\"customerServiceStatus\":false\n\t\t\n\t}\n]",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8124d94f-5f37-4084-93d4-43138dcb33ea",
+			"name": "添加定时任务",
+			"url": "{{url}}/api/royalty/v1/jobs/add",
+			"description": null,
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjI1Mzk3MH0.s9A4BWiv3blp8ik9YsNQQ4eaA6p5x8K25Ud6zF2jm2LzzqPCeC8sGFj0ccCN2G2Cq_yUM0yMN8wvhbjL2OSOeA"
+					}
+				]
+			},
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t \"jobName\":\"com.cnnyd.royalty.base.job.SendMsgJob\",\n\t \"jobGroup\":\"SendMsgJob\",\n\t \"cronExpression\":\"0 0/20 * * * ?\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "83f14938-a148-4b67-8c93-3ff54dfa56bc",
+			"name": "根据id获取视频详情信息",
+			"url": "{{url}}/api/royalty/videoExchange/getVideoById/402860817050e31d01705123eb410000",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTk5MjI2MX0.nL8TaIgGkYeGbHWlJq5gCK7vyxANUTih3a4mDBM1YcXvTWsCVD-7PthNruIcVcgdcAUPxMXvrxcldhzEJb409A"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "84328bb8-6b1c-4112-ac19-7c0310daa761",
+			"name": "保存课程基本信息和详细信息",
+			"url": "{{url}}/api/royalty/course/saveBasicAndDetailInfo",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjAyMTA5MX0.7f-8ODhuPd5-pgLaSWGFdOzX161Z1or1P15zd7MGQbGNmkrrGc9mtEQy1OvHi3_tlGksEINJsneSw6mbfCpr_A"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\n\t\"memberBasicInfoId\":\"bdbdbaa111\",\n\t\"courseVoucherUploadFlag\":1,\n\t\"customerServiceStatus\":1,\n\t\"immediatelyUpload\":0,\n\t\"courseInfoDetailMiniVOS\":[\n\t{\n\t\t\"memberBasicInfoId\":\"test1\",\n\t\t\"courseName\":\"拉伸\",\n\t\t\"courseCity\":\"北京\",\n\t\t\"courseTime\":\"2018-02~2019-08\",\n\t\t\"courseVoucherUploadFlag\":\"1\",\n\t\t\"customerServiceStatus\":true\n\t},\n\t{\n\t\t\"memberBasicInfoId\":\"test2\",\n\t\t\"courseName\":\"有氧运动\",\n\t\t\"courseCity\":\"北京\",\n\t\t\"courseTime\":\"2016-06~2020-01\",\n\t\t\"courseVoucherUploadFlag\":\"1\",\n\t\t\"customerServiceStatus\":false\n\t\t\n\t}\n\t]\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "864a5d4f-71cd-44e3-ba1c-c424d3e15e6d",
+			"name": "添加定时任务",
+			"url": "{{url}}jobs/add",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"jobName\":\"com.cnnyd.royalty.base.job.AmbUserJob\",\n\t\"jobGroup\":\"AmbJob\",\n\t\"cronExpression\":\"0 0/5 * * * ?\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8be7d2cd-6ab0-4dc4-908e-076e80ebaef1",
+			"name": "查询客户下面通过的课程信息",
+			"url": "{{url}}/api/royalty/course/detail/getCourseInfo",
+			"description": null,
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjE1Mjg1OH0.fjHgR6Z6iEVf_6r6xtKi5h2Uppu5dGm2Vv2wLEgvTwiOx6T_nYMZUESgSfRzniKGiPvAiMfiNOO0BFy9v4OVMw"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "[\"1\",\"2\"]\n",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "8e4b53e8-4a60-4519-803f-7bf68cdf47b1",
+			"name": "4.通过提现申请",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000/toPass",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"rawModeData": "{\n\t\"applyCredits\":20,\n\t\"bank\":\"lajibank\",\n\t\"idNum\":\"378128912y789y781\",\n\t\"name\":\"name\",\n\t\"nickname\":\"nicheng\",\n\t\"payAmount\":10,\n\t\"payType\":3,\n\t\"userAccount\":\"zhanghao\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "97f0899f-da44-46dd-9693-b0b46caa60e5",
+			"name": "查询报名记录详情 Copy",
+			"url": "{{url}}orders/889220c96b5811e9bf4602b7e6a01cee",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "997327c8-dd70-46fb-a81c-a1b6fd2c6d2b",
+			"name": "获取剩余缴费等信息",
+			"url": "{{url}}orderInfos?addOrderId=&orderId=889220c96b5811e9bf4602b7e6a01cee",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "addOrderId",
+					"value": ""
+				},
+				{
+					"key": "orderId",
+					"value": "889220c96b5811e9bf4602b7e6a01cee"
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a263342b-ff06-4bdf-ae5c-53f2778a94ae",
+			"name": "修改定时任务",
+			"url": "{{url}}jobs/edit",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\n\t\"jobName\":\"com.cnnyd.royalty.base.job.CreditsJob\",\n\t\"jobGroup\":\"CreditsJob\",\n\t\"cronExpression\":\"0 0/1 * * * ?\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a3d1fad1-1c82-4f97-b2e0-93123c524932",
+			"name": "退款",
+			"url": "{{url}}addOrders/8a80819c6bd5913d016bd595af500000/refundRecord",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"rawModeData": "{\n\t\"outRefundNo\":\"odjjajdjnkl1200\",\n\t\"refundAmount\":10,\n\t\"refundBank\":\"建设银行\",\n\t\"refundTime\":\"2019-09-03 10:10:00\",\n\t\"refundType\":\"建设银行\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a462e0ea-4743-479b-b724-d40f4edc7b9d",
+			"name": "获取补缴信息列表",
+			"url": "{{url}}additionalOrders?orderId=889220c96b5811e9bf4602b7e6a01cee",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "orderId",
+					"value": "889220c96b5811e9bf4602b7e6a01cee"
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a972fbfd-2db2-4e40-a0c7-462e5ad65a98",
+			"name": "5.支付前获取信息",
+			"url": "{{url}}creditsToCash/8a80819c6bf51ba5016bf854b51f0000/beforePay",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "af8a2f77-b0bc-4b10-8ffe-5ed4e6584099",
+			"name": "获取银行列表",
+			"url": "{{url}}dictionary/banks",
+			"description": null,
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"type": "text",
+					"value": "{{token}}"
+				},
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "{\n\t\"outRefundNo\":\"dasdasdqe132133\",\n\t\"refundAmount\":2,\n\t\"refundBank\":\"dabank\",\n\t\"refundTime\":\"2019-09-03 10:10:00\",\n\t\"refundType\":\"1\"\n}",
+			"headers": "Authorization: {{token}}\nContent-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b3146023-286b-4806-bfc9-d0fbf58ff31c",
+			"name": "诺亚第登录",
+			"url": "{{url}}/api/royalty/v1/users/login",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n\t\"password\": \"admin\",\r\n\t\"username\": \"admin\"\r\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b6bdd5c4-52f5-4b4e-9ea0-3f28d3d3ec56",
+			"name": "校验是否为老会员",
+			"url": "{{url}}/api/royalty/member/checkIsOldMember",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjE1Mjg1OH0.fjHgR6Z6iEVf_6r6xtKi5h2Uppu5dGm2Vv2wLEgvTwiOx6T_nYMZUESgSfRzniKGiPvAiMfiNOO0BFy9v4OVMw"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "b752cec7-d467-4b29-92fe-67e02cdd5410",
+			"name": "修改学员分享获取诺币兑换比例",
+			"url": "{{nyd}}dictionary/students/courses/proportion?proportion=1500&remark=1000000",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "proportion",
+					"value": "1500",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "1000000",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjQ5ODIyMn0.AafDHIuq6hqwfV0S73_p4UGI9s8qOnqYti96z82MJhS9H1SBdPFfKY94x3Ob-QivbxpxKEBSoxZyDsrgTkzL1g"
+					}
+				],
+				"type": "bearer"
+			},
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "bbbe6723-002f-413f-ab70-c73c60a506c7",
+			"name": "报名页面-详情",
+			"url": "{{url}}cCourses/0880deb5d8be11e8bf4602b7e6a01cee/simple",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "cc7236dc-dc59-4a69-b5f4-fb86ed7edd1c",
+			"name": "查询报名记录详情",
+			"url": "{{url}}orders/889220c96b5811e9bf4602b7e6a01cee",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "aae9acd9-bd9c-4fbd-953a-d2128212460a",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "d03bb2ee-7e9f-4f12-bee9-128271c55d49",
+			"name": "getMsg发送提醒补充信息短息",
+			"url": "{{url}}/api/royalty/course/getMsg",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjI1Mzk3MH0.s9A4BWiv3blp8ik9YsNQQ4eaA6p5x8K25Ud6zF2jm2LzzqPCeC8sGFj0ccCN2G2Cq_yUM0yMN8wvhbjL2OSOeA"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "d2a4458a-ac02-4504-8bae-641b26dd0099",
+			"name": "上传会员历史课程凭证照片",
+			"url": "{{url}}/api/royalty/memberCoursePic/uploadPic?memberBasicInfoId=undefined&infoStatus=again",
+			"description": "",
+			"data": [
+				{
+					"key": "file",
+					"value": "/C:/Users/zhangyifei/Desktop/11.jpg",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataOptions": null,
+			"dataMode": "params",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "memberBasicInfoId",
+					"value": "undefined",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "infoStatus",
+					"value": "again",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJvbVlEcTFmN1EzRXRrOTRoOEk0Uk1qdmFrcXBZIiwiYXV0aCI6IiIsImlkIjoiNTBjZWRmMTM1M2JmMTFlYWI0NjUwMDE2M2UwNmRkNjciLCJuYW1lIjoiIiwiZXhwIjoxNTgyMjYxMTc1fQ.QjfjDhZTA7HidKe2-8_OR1dG9Aof3Zo8Gd9a3XZ_BER_GOhXsZlLb1doRVV0Ajqq1OKb0Tgh69HhXJPGUr3OOg"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"pathVariables": {}
+		},
+		{
+			"id": "d76d77fd-7151-445e-a956-7de000bd01c0",
+			"name": "查询优惠券状态",
+			"url": "{{url}}cAmbassadors/state?code=CODE1",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "code",
+					"value": "CODE1"
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "5e0f2b35-3bfd-4c27-a542-ea360d87e7d6",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "dad50280-8177-4946-816d-a3cad47bba57",
+			"name": "发放积分",
+			"url": "{{url}}creditsPools/creditsPool/a03257826ef911e9a3a702e1f3082d36",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU2NDcxMTU4NX0.PlrBTTHvQ4tliSyTSRI0D92Fq0M6sPBsy7H363UdSz7AatakhwDDamjzZlGHsSKJV1-2GGTPERaRhTnyFuBGZA",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": "51ba0b18-f8e0-45a5-8722-01fcfbf4e677",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU2NDcxMTU4NX0.PlrBTTHvQ4tliSyTSRI0D92Fq0M6sPBsy7H363UdSz7AatakhwDDamjzZlGHsSKJV1-2GGTPERaRhTnyFuBGZA\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ec218499-e3a7-4e8d-b37b-021e1b080e9a",
+			"name": "获取诺亚第大使详情",
+			"url": "{{url}}cAmbassadors/detail?code=CODE999",
+			"description": null,
+			"data": null,
+			"dataMode": null,
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "{{token}}",
+					"type": "text"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [
+				{
+					"key": "code",
+					"value": "CODE999"
+				}
+			],
+			"auth": null,
+			"events": null,
+			"folder": "5e0f2b35-3bfd-4c27-a542-ea360d87e7d6",
+			"headers": "Authorization: {{token}}\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f200af51-d264-460b-a7b8-588be4d0dfaf",
+			"name": "通过兑换码兑换视频",
+			"url": "{{url}}/api/royalty/videoExchange/convertibleVideoByTicket",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTczNDAwNn0.n6sfd3Xg1NZ7aZZbMewN-XL2ArTjeVgzYS5xh-3CYuNmpT-Vfd2e_fe1ZH7WexA87hcOENBGTupCdmbDza62dg"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\n\t\"userFillInTicket\":\"612512\",\n\t\"videoId\":\"kk1212\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "f73334d7-1034-482e-a181-ac2084c2bb66",
+			"name": "保存会员基本信息",
+			"url": "{{url}}/api/royalty/member/save",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MjA2NjQ3MH0.3F-RMag3whUb3pPRlbj9HTJV_zF_dvBFru9LzR6MWj92SgCYSZZJ2-sdDMmpfsdwIugwWrdFbeEc7rkkHINh8A"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"rawModeData": "{\n\t\"name\":\"陈鳗鱼\",\n\t\"idCardNum\":\"123456789012345678\",\n\t\"city\":\"天津\",\n\t\"picUrl\":\"http://api.dev.nuolth.com/upload/member//975662F5ECBD4349AD21F5627E7C093A.jpg\",\n\t\"code\":\"705812\",\n\t\"phoneNum\":\"15720884358\"\n\t\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "fbe9fbb9-adff-47b5-8ac7-c753f6b9c2ca",
+			"name": "http://cs.elementwin.com/timer/sms/nydSend",
+			"url": "http://cs.elementwin.com/timer/sms/nydSend",
+			"description": null,
+			"data": [
+				{
+					"key": "receiverPhone",
+					"value": "18753246906",
+					"type": "text"
+				},
+				{
+					"key": "content",
+					"value": "呵呵",
+					"type": "text"
+				},
+				{
+					"key": "code",
+					"value": "06",
+					"type": "text"
+				},
+				{
+					"key": "receiverName",
+					"value": "",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "ff2d7280-0406-4d50-bce5-33eb2a87ae2d",
+			"name": "获取当前用户所兑换的视频信息",
+			"url": "{{url}}/api/royalty/videoExchange/getCurrentUserVideos",
+			"description": "",
+			"data": [],
+			"dataOptions": null,
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"description": "",
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"type": "text",
+					"value": "application/json"
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX1VTRVJJTkZPX1VTQUJMRSIsImlkIjoiMSIsIm5hbWUiOiJhZG1pbiIsImV4cCI6MTU4MTgyNzgzNX0.6O0uSaSLtNh3EIVB5CoKALSRjI1svvP68-QAQ7zKVrKTwKPRoLtuEI18A0drjW8u_8KgjSLuwXIFmRyOGBtpbw"
+					}
+				]
+			},
+			"events": null,
+			"folder": "7e95c3b5-c694-4de3-bff0-67cb3c77bc19",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"rawModeData": "",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		}
+	]
+}
