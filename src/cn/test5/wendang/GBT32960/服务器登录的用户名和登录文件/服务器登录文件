@@ -1,0 +1,9 @@
+IP：115.29.66.131
+用户名：opsuser
+密码：使用 vpf-test.pem 文件进行登录
+
+jar包存放路径：/www/server/jar
+log日志存放路径：/www/server/jar/logs/gbt32960
+
+
+
