@@ -31,7 +31,7 @@ public class Test {
 
         System.out.println("list = " + list);
 
-        Collections.sort(list, new TaskComparator_item_value());
+        Collections.sort(list, new TaskComparator());
         System.out.println("list = " + list);
 
         // TransObj transObj = new TransObj();

@@ -9,9 +9,9 @@ public class TaskComparator implements Comparator {
         Task task2 = (Task) o2;
 
         if (task1.getSortPriority() > task2.getSortPriority()) {
-            return 1;
-        } else {
             return -1;
+        } else {
+            return 1;
         }
     }
 }  
