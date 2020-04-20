@@ -13,6 +13,13 @@ public class Test {
         List<String> list1 = Arrays.asList("113", "113", "123", "155", "166");
         List<String> list2 = Arrays.asList("22", "33", "44", "155", "66");
 
+        System.out.println(list1.size());
+        System.out.println(list1.get(list1.size() - 1));
+
+        System.out.println("".equals("PRESALE_CUSTOMER_CATEGORY"));
+
+        System.out.println("---------------------");
+
         String temp = "";
         outf:
         for (int i = 0; i < list1.size(); i++) {
