@@ -8,6 +8,14 @@ import java.util.List;
  * 中找到第一个只出现一次的字符,并返回它的位置, 如果没有则返回 -1（需要区分大小写）.
  */
 public class Solution6 {
+    public static void main(String[] args) {
+        String s = "aabqweqwqweeee";
+        Solution6 solution6 = new Solution6();
+
+
+        System.out.println(solution6.FirstNotRepeatingChar(s));
+    }
+
     public int FirstNotRepeatingChar(String str) {
         if ("".equals(str) || str == null) {
             return -1;
@@ -31,18 +39,10 @@ public class Solution6 {
                 }
             }
             if (temp == 1) {
-                return list.indexOf(c+"");
+                return list.indexOf(c + "");
             }
 
         }
         return -1;
-    }
-
-    public static void main(String[] args) {
-        String s = "aabqweqwqweeee";
-        Solution6 solution6 = new Solution6();
-
-
-        System.out.println(solution6.FirstNotRepeatingChar(s));
     }
 }

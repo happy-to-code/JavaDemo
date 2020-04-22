@@ -7,6 +7,17 @@ import java.util.ArrayList;
  * 使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。
  */
 public class Solution4 {
+    public static void main(String[] args) {
+
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+        int sum = 9;
+
+        Solution4 s = new Solution4();
+        ArrayList<Integer> list = s.FindNumbersWithSum(array, sum);
+        System.out.println(list);
+
+    }
+
     public ArrayList<Integer> FindNumbersWithSum(int[] array, int sum) {
         ArrayList<Integer> list = new ArrayList<>(10);
 
@@ -50,17 +61,5 @@ public class Solution4 {
         }
 
         return list;
-    }
-
-
-    public static void main(String[] args) {
-
-        int[] array = {1, 2, 3, 4, 5,6, 7, 8};
-        int sum = 9;
-
-        Solution4 s = new Solution4();
-        ArrayList<Integer> list = s.FindNumbersWithSum(array, sum);
-        System.out.println(list);
-
     }
 }

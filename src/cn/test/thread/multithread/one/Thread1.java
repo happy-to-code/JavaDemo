@@ -13,6 +13,16 @@ class Thread1 extends Thread {
         this.name = name;
     }
 
+    public static void main(String[] args) {
+        Thread1 mTh1 = new Thread1("A");
+        Thread1 mTh2 = new Thread1("B");
+        //优先级
+        mTh1.setPriority(MAX_PRIORITY);
+        mTh2.setPriority(MIN_PRIORITY);
+        mTh1.start();
+        mTh2.start();
+    }
+
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
@@ -26,16 +36,6 @@ class Thread1 extends Thread {
             }
         }
 
-    }
-
-    public static void main(String[] args) {
-        Thread1 mTh1 = new Thread1("A");
-        Thread1 mTh2 = new Thread1("B");
-        //优先级
-        mTh1.setPriority(MAX_PRIORITY);
-        mTh2.setPriority(MIN_PRIORITY);
-        mTh1.start();
-        mTh2.start();
     }
 
 }

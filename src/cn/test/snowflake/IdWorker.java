@@ -33,6 +33,14 @@ public class IdWorker {
         this.datacenterId = datacenterId;
     }
 
+    public static void main(String[] args) {
+        IdWorker idWorker = new IdWorker(0, 0);
+        for (int i = 0; i < 100; i++) {
+            long id = idWorker.nextId();
+            System.out.println(id);
+        }
+    }
+
     public synchronized long nextId() {
         long timestamp = timeGen();
         if (timestamp < lastTimestamp) {
@@ -62,13 +70,5 @@ public class IdWorker {
 
     protected long timeGen() {
         return System.currentTimeMillis();
-    }
-
-    public static void main(String[] args) {
-        IdWorker idWorker = new IdWorker(0, 0);
-        for (int i = 0; i < 100; i++) {
-            long id = idWorker.nextId();
-            System.out.println(id);
-        }
     }
 }

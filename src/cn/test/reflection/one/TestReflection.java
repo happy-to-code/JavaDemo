@@ -34,12 +34,12 @@ public class TestReflection {
         Field[] fields = mClass.getDeclaredFields();
 
         //3.遍历变量并输出变量信息
-        for (Field field :fields) {
+        for (Field field : fields) {
             //获取访问权限并输出
             int modifiers = field.getModifiers();
             System.out.println(Modifier.toString(modifiers));
             //输出变量的类型及变量名 
-            System.out.println(field.getType().getName()+ "-|-|-|-" + field.getName());
+            System.out.println(field.getType().getName() + "-|-|-|-" + field.getName());
         }
     }
 
@@ -65,12 +65,12 @@ public class TestReflection {
             System.out.print(Modifier.toString(modifiers) + " ");
             //获取并输出方法的返回值类型
             Class returnType = method.getReturnType();
-            System.out.print(returnType.getName() + "=="+ method.getName() + "( ");
+            System.out.print(returnType.getName() + "==" + method.getName() + "( ");
             //获取并输出方法的所有参数
             Parameter[] parameters = method.getParameters();
             for (Parameter parameter :
                     parameters) {
-                System.out.print(parameter.getType().getName()+ "##" + parameter.getName() + ",");
+                System.out.print(parameter.getType().getName() + "##" + parameter.getName() + ",");
             }
             //获取并输出方法抛出的异常
             Class[] exceptionTypes = method.getExceptionTypes();

@@ -26,8 +26,8 @@ public class Test5 {
             e.printStackTrace();
         }
 
-        System.out.println(date + ":"+date3);
-        System.out.println(date.getTime() + ":"+date3.getTime());
-        System.out.println(date.getTime()/1000 -date3.getTime()/1000);
+        System.out.println(date + ":" + date3);
+        System.out.println(date.getTime() + ":" + date3.getTime());
+        System.out.println(date.getTime() / 1000 - date3.getTime() / 1000);
     }
 }

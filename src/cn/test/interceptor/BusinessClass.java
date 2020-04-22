@@ -1,7 +1,7 @@
 package cn.test.interceptor;
 
 /**
- *业务组件接口的实现类
+ * 业务组件接口的实现类
  */
 public class BusinessClass implements BusinessFacade {
     @Override

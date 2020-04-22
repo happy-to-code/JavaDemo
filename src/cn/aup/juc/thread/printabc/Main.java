@@ -1,22 +1,6 @@
 package cn.aup.juc.thread.printabc;
 
 public class Main {
-    static class Word {
-        String s;
-
-        public Word(String a) {
-            s = a;
-        }
-
-        public void setS(String a) {
-            s = a;
-        }
-
-        public String getS() {
-            return s;
-        }
-    }
-
     static int i = 0;
     static Word s = new Word("A");
 
@@ -67,5 +51,21 @@ public class Main {
         });
         t1.start();
         t2.start();
+    }
+
+    static class Word {
+        String s;
+
+        public Word(String a) {
+            s = a;
+        }
+
+        public String getS() {
+            return s;
+        }
+
+        public void setS(String a) {
+            s = a;
+        }
     }
 }

@@ -20,7 +20,7 @@ public class Test {
 
 
         String sss = "http://v.juhe.cn/sweizhang/query?city=SH_NER&hphm=沪AD02318&hpzl=52&engineno=M0301606019&classno= LNJABA61XGVT00475&key=3d5fe9b53b2246a8d85cff85a0c9130a";
-        System.out.println(sss.substring(0,96));
+        System.out.println(sss.substring(0, 96));
 
         System.out.println("V".equals("V1"));
     }

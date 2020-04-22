@@ -16,9 +16,7 @@ public class Test {
 
         String code = "    abc  eff    de t   sfsd    ooop ";
         String replace = code.replaceAll(" ", "");
-        System.out.println("::::|"+replace+"|");
-
-
+        System.out.println("::::|" + replace + "|");
 
 
     }

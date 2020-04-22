@@ -13,7 +13,6 @@ public class Sub extends Parent {
     }
 
 
-
     public static void main(String[] args) {
         System.out.println("sub main");
         new Sub();

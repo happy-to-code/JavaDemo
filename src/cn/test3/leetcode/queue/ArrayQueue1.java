@@ -33,6 +33,20 @@ public class ArrayQueue1<T> {
         this.array = (T[]) Array.newInstance(type, capacity);
     }
 
+    public static void main(String[] args) throws Exception {
+        ArrayQueue1<String> queue = new ArrayQueue1<>(String.class, 8);
+        System.out.println("队列的容量为：" + queue.capacity());
+        int i = 1;
+        while (!queue.isFull()) {
+            queue.enqueue("E" + (i++));
+        }
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.dequeue());
+        }
+
+    }
+
     public int capacity() {
         return array.length;
     }
@@ -72,19 +86,5 @@ public class ArrayQueue1<T> {
         T element = array[front];
         front = (front + 1) % array.length;
         return element;
-    }
-
-    public static void main(String[] args) throws Exception {
-        ArrayQueue1<String> queue = new ArrayQueue1<>(String.class, 8);
-        System.out.println("队列的容量为：" + queue.capacity());
-        int i = 1;
-        while (!queue.isFull()) {
-            queue.enqueue("E" + (i++));
-        }
-
-        while (!queue.isEmpty()) {
-            System.out.println(queue.dequeue());
-        }
-
     }
 }

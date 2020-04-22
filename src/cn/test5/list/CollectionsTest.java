@@ -18,6 +18,6 @@ public class CollectionsTest {
         System.out.println("list = " + list);
         Integer max = Collections.max(list);
         System.out.println("max = " + max);
-        
+
     }
 }

@@ -20,7 +20,7 @@ public class TestNextDate {
         System.out.println(date);
         System.out.println("=====");
         System.out.println(date.getYear());
-        System.out.println(date.getMonth()+1);
+        System.out.println(date.getMonth() + 1);
         System.out.println(date.getDate());
         System.out.println("---------------------------------------");
 

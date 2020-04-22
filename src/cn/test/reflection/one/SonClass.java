@@ -6,29 +6,29 @@ package cn.test.reflection.one;
  * @Date:2018/12/22
  */
 public class SonClass extends FatherClass {
-    private String mSonName;
-    protected int mSonAge;
     public String mSonBirthday;
+    protected int mSonAge;
+    private String mSonName;
 
     public void printSonMsg() {
         System.out.println("Son Msg - name : "
                 + mSonName + "; age : " + mSonAge);
     }
 
-    private void setSonName(String name) {
-        mSonName = name;
+    private int getSonAge() {
+        return mSonAge;
     }
 
     private void setSonAge(int age) {
         mSonAge = age;
     }
 
-    private int getSonAge() {
-        return mSonAge;
-    }
-
     private String getSonName() {
         return mSonName;
+    }
+
+    private void setSonName(String name) {
+        mSonName = name;
     }
 
 }

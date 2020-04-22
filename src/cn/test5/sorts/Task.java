@@ -15,7 +15,7 @@ public class Task {
 
     private Date date;
 
-    public Task(Long id, String name,Integer sortPriority,Date date) {
+    public Task(Long id, String name, Integer sortPriority, Date date) {
         this.id = id;
         this.name = name;
         this.sortPriority = sortPriority;

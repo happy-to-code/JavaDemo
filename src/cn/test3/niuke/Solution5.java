@@ -11,6 +11,19 @@ import java.util.ArrayList;
  * 输出所有和为S的连续正数序列。序列内按照从小至大的顺序，序列间按照开始数字从小到大的顺序
  */
 public class Solution5 {
+    public static void main(String[] args) {
+        int i = 3;
+        System.out.println(i / 2);
+        System.out.println((i - 1) / 2);
+
+        System.out.println("----------");
+        Solution5 s = new Solution5();
+        ArrayList<ArrayList<Integer>> arrayLists = s.FindContinuousSequence(100);
+        for (ArrayList<Integer> arrayList : arrayLists) {
+            System.out.println(arrayList);
+        }
+    }
+
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
 
         ArrayList<ArrayList<Integer>> arrayLists = new ArrayList<>(10);
@@ -49,19 +62,5 @@ public class Solution5 {
         }
 
         arrayLists.add(subList);
-    }
-
-
-    public static void main(String[] args) {
-        int i = 3;
-        System.out.println(i / 2);
-        System.out.println((i - 1) / 2);
-
-        System.out.println("----------");
-        Solution5 s = new Solution5();
-        ArrayList<ArrayList<Integer>> arrayLists = s.FindContinuousSequence(100);
-        for (ArrayList<Integer> arrayList : arrayLists) {
-            System.out.println(arrayList);
-        }
     }
 }

@@ -1,216 +1,216 @@
 {
-	"id": "ecbe1612-d2d9-413d-aad4-818320bec66e",
-	"name": "围栏",
-	"description": "",
-	"auth": null,
-	"events": null,
-	"variables": [],
-	"order": [
-		"bc57830d-dde0-4d92-b934-a18424984f73",
-		"4f530353-735a-486a-949e-c5babf3390b4",
-		"8674d926-3436-4c83-800d-a1838c229c0d",
-		"88b6d60c-1a2e-4b72-95fb-2010014fddc8",
-		"5f02e07a-a7af-4b8a-ab2b-8841f7ca9795",
-		"85bf4e61-1eb9-4b9d-be73-f95cdd6ce3fa"
-	],
-	"folders_order": [],
-	"folders": [],
-	"requests": [
-		{
-			"id": "4f530353-735a-486a-949e-c5babf3390b4",
-			"name": "根据ID查询",
-			"url": "localhost:8081/api/enclosure/getById",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"name": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"type": "text"
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyOTE2OTExLCJpYXQiOjE1NjI5MTM5MTF9.m2Q7TzFfE3JsQhEJtK96xaMMQWg_W4R8joah6oCvkSAGeAAxO0tC9wQzAJXvYIzMUy629K62mQwn-az8SfMBWw"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"rawModeData": "{\n\t\"id\":19\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "5f02e07a-a7af-4b8a-ab2b-8841f7ca9795",
-			"name": "分页查询围栏",
-			"url": "localhost:8081/api/enclosure/enclosurePageList",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"name": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"type": "text"
-				}
-			],
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIn0.lq7T7b1tGuBLMUwU6syMNc6jkpJsT2AsMcq-SRpFx960wR6oKZm4OimH8dl5xquOefV8DPozxkvDjuAFWvXH2w"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"rawModeData": "{\n\t\"name\":\"\",\n\t\"orgId\":\"\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 500\n\t}\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "85bf4e61-1eb9-4b9d-be73-f95cdd6ce3fa",
-			"name": "车辆绑定围栏",
-			"url": "localhost:8081/api/enclosure/vehicleBindEnclosure",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"name": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"type": "text"
-				}
-			],
-			"method": "PUT",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYzMTU4NDg3LCJpYXQiOjE1NjMxNTU0ODd9.b2skDHHNzPK35RabH42u2HPTn_owrNbmROF2arZfjEBBHTsy0ypYm9ugQLdyyF2hS-N9llvKOS_rfwXYRtsleQ"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"rawModeData": "{\n\t\"enclosureId\":19,\n\t\"vehicleIds\":[1,1,2,2]\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "8674d926-3436-4c83-800d-a1838c229c0d",
-			"name": "根据ID删除围栏",
-			"url": "localhost:8081/api/enclosure/deleteById",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"name": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"type": "text"
-				}
-			],
-			"method": "DELETE",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyODE5NjU0LCJpYXQiOjE1NjI4MTY2NTR9.GcURRjVP8NtLu5Voac-Bwg9tG3n2G9a92qdvZDtj5gZDPz2QgmVX5BC1WSwRUcZTNXXDwBRNwcWS3heb-lCZMQ"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"rawModeData": "{\n\t\"id\":18\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "88b6d60c-1a2e-4b72-95fb-2010014fddc8",
-			"name": "编辑围栏",
-			"url": "localhost:8081/api/enclosure/edit",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"name": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"type": "text"
-				}
-			],
-			"method": "PUT",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": null,
-			"events": null,
-			"folder": null,
-			"rawModeData": "{\n\t\t\"id\":19,\n\t\t\"name\":\"test199\",\n\t\t\"org_id\":\"1\",\n\t\t\"enable\":\"1\",\n\t\t\"remarks\":\"我的备注19\",\n\t\t\"enclosureCoords\":[\n\t\t\t{\t\"lon\":\"116.287222\",\n\t\t\t\t\"lat\":\"38.751742\",\n\t\t\t\t\"sort\":1\n\t\t\t},\n\t\t\t{\t\"lon\":\"116.974072\",\n\t\t\t\t\"lat\":\"35.96542\",\n\t\t\t\t\"sort\":2\n\t\t\t},\n\t\t\t{\t\"lon\":\"116.106582\",\n\t\t\t\t\"lat\":\"57.512602\",\n\t\t\t\t\"sort\":3\n\t\t\t}\n\t\t]\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		},
-		{
-			"id": "bc57830d-dde0-4d92-b934-a18424984f73",
-			"name": "围栏新增",
-			"url": "localhost:8081/api/enclosure/add",
-			"description": "",
-			"data": [],
-			"dataMode": "raw",
-			"headerData": [
-				{
-					"key": "Content-Type",
-					"name": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"type": "text"
-				}
-			],
-			"method": "PUT",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyODE5NjU0LCJpYXQiOjE1NjI4MTY2NTR9.GcURRjVP8NtLu5Voac-Bwg9tG3n2G9a92qdvZDtj5gZDPz2QgmVX5BC1WSwRUcZTNXXDwBRNwcWS3heb-lCZMQ"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"rawModeData": "{\n\t\"enclosure\":{\n\t\t\"name\":\"test22\",\n\t\t\"orgId\":\"2\",\n\t\t\"enable\":\"1\",\n\t\t\"remarks\":\"TestTest2\"\n\t},\n\t\"enclosureCoords\":[\n\t\t{\t\"lon\":\"116.287221\",\n\t\t\t\"lat\":\"38.751748\",\n\t\t\t\"sort\":1\n\t\t},\n\t\t{\t\"lon\":\"118.974073\",\n\t\t\t\"lat\":\"35.96542\",\n\t\t\t\"sort\":2\n\t\t},\n\t\t{\t\"lon\":\"112.106586\",\n\t\t\t\"lat\":\"57.512606\",\n\t\t\t\"sort\":3\n\t\t}\n\t\t]\n}",
-			"headers": "Content-Type: application/json\n",
-			"pathVariables": {}
-		}
-	]
+  "id": "ecbe1612-d2d9-413d-aad4-818320bec66e",
+  "name": "围栏",
+  "description": "",
+  "auth": null,
+  "events": null,
+  "variables": [],
+  "order": [
+    "bc57830d-dde0-4d92-b934-a18424984f73",
+    "4f530353-735a-486a-949e-c5babf3390b4",
+    "8674d926-3436-4c83-800d-a1838c229c0d",
+    "88b6d60c-1a2e-4b72-95fb-2010014fddc8",
+    "5f02e07a-a7af-4b8a-ab2b-8841f7ca9795",
+    "85bf4e61-1eb9-4b9d-be73-f95cdd6ce3fa"
+  ],
+  "folders_order": [],
+  "folders": [],
+  "requests": [
+    {
+      "id": "4f530353-735a-486a-949e-c5babf3390b4",
+      "name": "根据ID查询",
+      "url": "localhost:8081/api/enclosure/getById",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyOTE2OTExLCJpYXQiOjE1NjI5MTM5MTF9.m2Q7TzFfE3JsQhEJtK96xaMMQWg_W4R8joah6oCvkSAGeAAxO0tC9wQzAJXvYIzMUy629K62mQwn-az8SfMBWw"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "rawModeData": "{\n\t\"id\":19\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": {}
+    },
+    {
+      "id": "5f02e07a-a7af-4b8a-ab2b-8841f7ca9795",
+      "name": "分页查询围栏",
+      "url": "localhost:8081/api/enclosure/enclosurePageList",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIn0.lq7T7b1tGuBLMUwU6syMNc6jkpJsT2AsMcq-SRpFx960wR6oKZm4OimH8dl5xquOefV8DPozxkvDjuAFWvXH2w"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "rawModeData": "{\n\t\"name\":\"\",\n\t\"orgId\":\"\",\n\t\"page\":{\n\t\t\"current\": 1,\n\t\t\"size\": 500\n\t}\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": {}
+    },
+    {
+      "id": "85bf4e61-1eb9-4b9d-be73-f95cdd6ce3fa",
+      "name": "车辆绑定围栏",
+      "url": "localhost:8081/api/enclosure/vehicleBindEnclosure",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "PUT",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYzMTU4NDg3LCJpYXQiOjE1NjMxNTU0ODd9.b2skDHHNzPK35RabH42u2HPTn_owrNbmROF2arZfjEBBHTsy0ypYm9ugQLdyyF2hS-N9llvKOS_rfwXYRtsleQ"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "rawModeData": "{\n\t\"enclosureId\":19,\n\t\"vehicleIds\":[1,1,2,2]\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": {}
+    },
+    {
+      "id": "8674d926-3436-4c83-800d-a1838c229c0d",
+      "name": "根据ID删除围栏",
+      "url": "localhost:8081/api/enclosure/deleteById",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "DELETE",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyODE5NjU0LCJpYXQiOjE1NjI4MTY2NTR9.GcURRjVP8NtLu5Voac-Bwg9tG3n2G9a92qdvZDtj5gZDPz2QgmVX5BC1WSwRUcZTNXXDwBRNwcWS3heb-lCZMQ"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "rawModeData": "{\n\t\"id\":18\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": {}
+    },
+    {
+      "id": "88b6d60c-1a2e-4b72-95fb-2010014fddc8",
+      "name": "编辑围栏",
+      "url": "localhost:8081/api/enclosure/edit",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "PUT",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": null,
+      "events": null,
+      "folder": null,
+      "rawModeData": "{\n\t\t\"id\":19,\n\t\t\"name\":\"test199\",\n\t\t\"org_id\":\"1\",\n\t\t\"enable\":\"1\",\n\t\t\"remarks\":\"我的备注19\",\n\t\t\"enclosureCoords\":[\n\t\t\t{\t\"lon\":\"116.287222\",\n\t\t\t\t\"lat\":\"38.751742\",\n\t\t\t\t\"sort\":1\n\t\t\t},\n\t\t\t{\t\"lon\":\"116.974072\",\n\t\t\t\t\"lat\":\"35.96542\",\n\t\t\t\t\"sort\":2\n\t\t\t},\n\t\t\t{\t\"lon\":\"116.106582\",\n\t\t\t\t\"lat\":\"57.512602\",\n\t\t\t\t\"sort\":3\n\t\t\t}\n\t\t]\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": {}
+    },
+    {
+      "id": "bc57830d-dde0-4d92-b934-a18424984f73",
+      "name": "围栏新增",
+      "url": "localhost:8081/api/enclosure/add",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "PUT",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiZXhwIjoxNTYyODE5NjU0LCJpYXQiOjE1NjI4MTY2NTR9.GcURRjVP8NtLu5Voac-Bwg9tG3n2G9a92qdvZDtj5gZDPz2QgmVX5BC1WSwRUcZTNXXDwBRNwcWS3heb-lCZMQ"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "rawModeData": "{\n\t\"enclosure\":{\n\t\t\"name\":\"test22\",\n\t\t\"orgId\":\"2\",\n\t\t\"enable\":\"1\",\n\t\t\"remarks\":\"TestTest2\"\n\t},\n\t\"enclosureCoords\":[\n\t\t{\t\"lon\":\"116.287221\",\n\t\t\t\"lat\":\"38.751748\",\n\t\t\t\"sort\":1\n\t\t},\n\t\t{\t\"lon\":\"118.974073\",\n\t\t\t\"lat\":\"35.96542\",\n\t\t\t\"sort\":2\n\t\t},\n\t\t{\t\"lon\":\"112.106586\",\n\t\t\t\"lat\":\"57.512606\",\n\t\t\t\"sort\":3\n\t\t}\n\t\t]\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": {}
+    }
+  ]
 }

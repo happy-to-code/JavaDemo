@@ -1,11 +1,11 @@
 package cn.classload;
 
 class SuperClass {
+    public static int value = 123;
+
     static {
         System.out.println("superclass init");
     }
-
-    public static int value = 123;
 }
 
 class SubClass extends SuperClass {

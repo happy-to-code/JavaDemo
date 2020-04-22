@@ -12,6 +12,12 @@ import java.util.List;
  * n<=39
  */
 public class Solution2 {
+    public static void main(String[] args) {
+        Solution2 solution2 = new Solution2();
+        int fibonacci = solution2.Fibonacci(7);
+        System.out.println(fibonacci);
+    }
+
     public int Fibonacci(int n) {
         List<Integer> list = new ArrayList<>(10);
         if (n <= 0) {
@@ -36,12 +42,6 @@ public class Solution2 {
         }
         return list.get(n);
 
-    }
-
-    public static void main(String[] args) {
-        Solution2 solution2 = new Solution2();
-        int fibonacci = solution2.Fibonacci(7);
-        System.out.println(fibonacci);
     }
 
 }

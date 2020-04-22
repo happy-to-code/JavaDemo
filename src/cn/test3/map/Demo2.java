@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class Demo2 {
     public static void main(String[] args) {
-        Map<String,String> map = new HashMap<>(2);
+        Map<String, String> map = new HashMap<>(2);
         System.out.println(map);
         map = null;
         System.out.println(map.containsKey("1"));

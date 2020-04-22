@@ -13,7 +13,7 @@ public class Test {
         // boolean a = (true || true && false);
         // System.out.println(a);
 
-        Map<String,Object> map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>();
 
         System.out.println(map.get("11"));
     }

@@ -30,6 +30,24 @@ public enum WeekEnum {
         this.des = des;
     }
 
+    public static WeekEnum getByIndex(int index) {
+        WeekEnum[] weekEnums = WeekEnum.values();
+        for (WeekEnum weekEnum : weekEnums) {
+            if (weekEnum.index == index) {
+                return weekEnum;
+            }
+        }
+        return null;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getByIndex(0));
+        System.out.println(getByIndex(0).getIndex());
+        System.out.println(getByIndex(0).getDes());
+
+        System.out.println(getByIndex(8));
+    }
+
     public Integer getIndex() {
         return index;
     }
@@ -44,26 +62,6 @@ public enum WeekEnum {
 
     public void setDes(String des) {
         this.des = des;
-    }
-
-
-    public static WeekEnum getByIndex(int index) {
-        WeekEnum[] weekEnums = WeekEnum.values();
-        for (WeekEnum weekEnum : weekEnums) {
-            if (weekEnum.index == index) {
-                return weekEnum;
-            }
-        }
-        return null;
-    }
-
-
-    public static void main(String[] args) {
-        System.out.println(getByIndex(0));
-        System.out.println(getByIndex(0).getIndex());
-        System.out.println(getByIndex(0).getDes());
-
-        System.out.println(getByIndex(8));
     }
 
 }

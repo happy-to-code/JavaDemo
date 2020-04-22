@@ -1,272 +1,272 @@
 {
-	"id": "d8720d41-f9e4-441d-aa7b-c172dd22f615",
-	"name": "Excel",
-	"description": null,
-	"auth": null,
-	"events": null,
-	"variables": [],
-	"order": [
-		"1063dcbd-ed77-4c60-b077-54f61d061730",
-		"412c2acc-4d08-4547-aee4-f144f8ee48c1",
-		"d46fb129-c7ab-4e55-afa6-e691177a5271",
-		"262ab9ee-a786-4d8d-be39-1e65dbc01c60",
-		"7f524192-6ccb-45f8-8c53-f8c7c916ccf5",
-		"d279044a-1f4e-4d73-a3c3-27eb48fa6638",
-		"56af920d-a7a1-44d8-aaf5-0d012ec896bb"
-	],
-	"folders_order": [],
-	"folders": [],
-	"requests": [
-		{
-			"id": "1063dcbd-ed77-4c60-b077-54f61d061730",
-			"name": "行驶证Excel上传",
-			"url": "localhost:8081/api/excelTask/driveLicenseUpload",
-			"description": "",
-			"data": [
-				{
-					"key": "file",
-					"description": "",
-					"type": "file",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"headerData": null,
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [
-				{
-					"key": "file",
-					"value": "",
-					"equals": false,
-					"description": "",
-					"enabled": false
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MTQ4ODMwfQ.u-HrjgYtY4sXLdqH3KSDdAb4-NJAJs4HoKkQ2jKaD1ODEyNwWItJ-XzeszYqJXl79tGfVlFvr21-UvLWWcldfA"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		},
-		{
-			"id": "262ab9ee-a786-4d8d-be39-1e65dbc01c60",
-			"name": "行驶证Excel导出",
-			"url": "localhost:8081/api/driveLicense/export?ids[]=2",
-			"description": "",
-			"data": null,
-			"dataMode": null,
-			"headerData": null,
-			"method": "GET",
-			"pathVariableData": [],
-			"queryParams": [
-				{
-					"key": "ids[]",
-					"value": "2",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				},
-				{
-					"key": "ids[]",
-					"value": "3",
-					"equals": true,
-					"description": "",
-					"enabled": false
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MzE5MTI4fQ.QbJuul8EeDTfT3zHbEpRFDGtcpI9dfBbMifOc6TZ7rg43ntWB5sCc-ztQ315HqpXavDg0qCulB14V7GYfxK46A"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		},
-		{
-			"id": "412c2acc-4d08-4547-aee4-f144f8ee48c1",
-			"name": "交强险批量上传",
-			"url": "localhost:8081/api/excelTask/uploadCompulsory",
-			"description": "",
-			"data": [
-				{
-					"key": "file",
-					"description": "",
-					"type": "file",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"headerData": null,
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [
-				{
-					"key": "file",
-					"value": "",
-					"equals": false,
-					"description": "",
-					"enabled": false
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4MTY0OTU1fQ.X80L_ZD4wDRQHkS1wSlmbIzI8ph5lGIL4x7kV5FcU9EZ8n4MBU-fkGi_zrNEujELhjDzuRPAnekEGpm84OrHIg"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		},
-		{
-			"id": "56af920d-a7a1-44d8-aaf5-0d012ec896bb",
-			"name": "行驶证年检导出",
-			"url": "localhost:8081/api/annuallyInspection/export?ids[]=50",
-			"description": "",
-			"data": null,
-			"dataMode": null,
-			"headerData": null,
-			"method": "GET",
-			"pathVariableData": [],
-			"queryParams": [
-				{
-					"key": "ids[]",
-					"value": "50",
-					"equals": true,
-					"description": "",
-					"enabled": true
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MzMwMTEzfQ.Giq0ImXc0eabdDi2iAuIoY8uhUTDMFzQvpvrsBcHuAM1YBgaUadHmndDFfHZEwhLq5tMqIcZPaeC7ntjjQFoPQ"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		},
-		{
-			"id": "7f524192-6ccb-45f8-8c53-f8c7c916ccf5",
-			"name": "交强险数据下载",
-			"url": "localhost:8081/api/insuranceCompulsory/export",
-			"description": "",
-			"data": null,
-			"dataMode": null,
-			"headerData": null,
-			"method": "GET",
-			"pathVariableData": [],
-			"queryParams": [
-				{
-					"key": "ids[]",
-					"value": "3",
-					"equals": true,
-					"description": "",
-					"enabled": false
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzQyMjU4fQ.vNmNiwUdirIVCYpnk3dNengZzxWlJX_r6pulWH9eJL-pGXAl8b0C3SggQGNFdRDFpfmQwCqMsjKuvBulY0sdVg"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		},
-		{
-			"id": "d279044a-1f4e-4d73-a3c3-27eb48fa6638",
-			"name": "行驶证年检Excel批量上传",
-			"url": "localhost:8081/api/excelTask/annuallyInspectionUpload",
-			"description": "",
-			"data": [
-				{
-					"key": "file",
-					"description": "",
-					"type": "file",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"headerData": null,
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1NTc3MzgyfQ.QcdpVMc1Rg5MkTS2EYCT5prKI9iRuIWXEgIj_Kmpo6QnYcYYAZ0eFP-sZih8kHq_lc78rdHzZD0SvtrNv6mUGg"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		},
-		{
-			"id": "d46fb129-c7ab-4e55-afa6-e691177a5271",
-			"name": "车辆基本信息 excel上传任务",
-			"url": "localhost:8081/api/excelTask/add",
-			"description": "",
-			"data": [
-				{
-					"key": "file",
-					"description": "",
-					"type": "file",
-					"enabled": true
-				}
-			],
-			"dataMode": "params",
-			"headerData": null,
-			"method": "POST",
-			"pathVariableData": [],
-			"queryParams": [
-				{
-					"key": "file",
-					"value": "",
-					"equals": false,
-					"description": "",
-					"enabled": false
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4NzEzNDU1fQ.N3LmEw7opHOwC0jTw3TzSRRNhB11uH0srFAU9laLnz19xo4TvPFWfT-lRU_2sdL6DLS-WkT0SN1tuiCEBNDleg"
-					}
-				]
-			},
-			"events": null,
-			"folder": null,
-			"pathVariables": {}
-		}
-	]
+  "id": "d8720d41-f9e4-441d-aa7b-c172dd22f615",
+  "name": "Excel",
+  "description": null,
+  "auth": null,
+  "events": null,
+  "variables": [],
+  "order": [
+    "1063dcbd-ed77-4c60-b077-54f61d061730",
+    "412c2acc-4d08-4547-aee4-f144f8ee48c1",
+    "d46fb129-c7ab-4e55-afa6-e691177a5271",
+    "262ab9ee-a786-4d8d-be39-1e65dbc01c60",
+    "7f524192-6ccb-45f8-8c53-f8c7c916ccf5",
+    "d279044a-1f4e-4d73-a3c3-27eb48fa6638",
+    "56af920d-a7a1-44d8-aaf5-0d012ec896bb"
+  ],
+  "folders_order": [],
+  "folders": [],
+  "requests": [
+    {
+      "id": "1063dcbd-ed77-4c60-b077-54f61d061730",
+      "name": "行驶证Excel上传",
+      "url": "localhost:8081/api/excelTask/driveLicenseUpload",
+      "description": "",
+      "data": [
+        {
+          "key": "file",
+          "description": "",
+          "type": "file",
+          "enabled": true
+        }
+      ],
+      "dataMode": "params",
+      "headerData": null,
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [
+        {
+          "key": "file",
+          "value": "",
+          "equals": false,
+          "description": "",
+          "enabled": false
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MTQ4ODMwfQ.u-HrjgYtY4sXLdqH3KSDdAb4-NJAJs4HoKkQ2jKaD1ODEyNwWItJ-XzeszYqJXl79tGfVlFvr21-UvLWWcldfA"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    },
+    {
+      "id": "262ab9ee-a786-4d8d-be39-1e65dbc01c60",
+      "name": "行驶证Excel导出",
+      "url": "localhost:8081/api/driveLicense/export?ids[]=2",
+      "description": "",
+      "data": null,
+      "dataMode": null,
+      "headerData": null,
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [
+        {
+          "key": "ids[]",
+          "value": "2",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "ids[]",
+          "value": "3",
+          "equals": true,
+          "description": "",
+          "enabled": false
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MzE5MTI4fQ.QbJuul8EeDTfT3zHbEpRFDGtcpI9dfBbMifOc6TZ7rg43ntWB5sCc-ztQ315HqpXavDg0qCulB14V7GYfxK46A"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    },
+    {
+      "id": "412c2acc-4d08-4547-aee4-f144f8ee48c1",
+      "name": "交强险批量上传",
+      "url": "localhost:8081/api/excelTask/uploadCompulsory",
+      "description": "",
+      "data": [
+        {
+          "key": "file",
+          "description": "",
+          "type": "file",
+          "enabled": true
+        }
+      ],
+      "dataMode": "params",
+      "headerData": null,
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [
+        {
+          "key": "file",
+          "value": "",
+          "equals": false,
+          "description": "",
+          "enabled": false
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4MTY0OTU1fQ.X80L_ZD4wDRQHkS1wSlmbIzI8ph5lGIL4x7kV5FcU9EZ8n4MBU-fkGi_zrNEujELhjDzuRPAnekEGpm84OrHIg"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    },
+    {
+      "id": "56af920d-a7a1-44d8-aaf5-0d012ec896bb",
+      "name": "行驶证年检导出",
+      "url": "localhost:8081/api/annuallyInspection/export?ids[]=50",
+      "description": "",
+      "data": null,
+      "dataMode": null,
+      "headerData": null,
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [
+        {
+          "key": "ids[]",
+          "value": "50",
+          "equals": true,
+          "description": "",
+          "enabled": true
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1MzMwMTEzfQ.Giq0ImXc0eabdDi2iAuIoY8uhUTDMFzQvpvrsBcHuAM1YBgaUadHmndDFfHZEwhLq5tMqIcZPaeC7ntjjQFoPQ"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    },
+    {
+      "id": "7f524192-6ccb-45f8-8c53-f8c7c916ccf5",
+      "name": "交强险数据下载",
+      "url": "localhost:8081/api/insuranceCompulsory/export",
+      "description": "",
+      "data": null,
+      "dataMode": null,
+      "headerData": null,
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [
+        {
+          "key": "ids[]",
+          "value": "3",
+          "equals": true,
+          "description": "",
+          "enabled": false
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY3NzQyMjU4fQ.vNmNiwUdirIVCYpnk3dNengZzxWlJX_r6pulWH9eJL-pGXAl8b0C3SggQGNFdRDFpfmQwCqMsjKuvBulY0sdVg"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    },
+    {
+      "id": "d279044a-1f4e-4d73-a3c3-27eb48fa6638",
+      "name": "行驶证年检Excel批量上传",
+      "url": "localhost:8081/api/excelTask/annuallyInspectionUpload",
+      "description": "",
+      "data": [
+        {
+          "key": "file",
+          "description": "",
+          "type": "file",
+          "enabled": true
+        }
+      ],
+      "dataMode": "params",
+      "headerData": null,
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY1NTc3MzgyfQ.QcdpVMc1Rg5MkTS2EYCT5prKI9iRuIWXEgIj_Kmpo6QnYcYYAZ0eFP-sZih8kHq_lc78rdHzZD0SvtrNv6mUGg"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    },
+    {
+      "id": "d46fb129-c7ab-4e55-afa6-e691177a5271",
+      "name": "车辆基本信息 excel上传任务",
+      "url": "localhost:8081/api/excelTask/add",
+      "description": "",
+      "data": [
+        {
+          "key": "file",
+          "description": "",
+          "type": "file",
+          "enabled": true
+        }
+      ],
+      "dataMode": "params",
+      "headerData": null,
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [
+        {
+          "key": "file",
+          "value": "",
+          "equals": false,
+          "description": "",
+          "enabled": false
+        }
+      ],
+      "auth": {
+        "type": "bearer",
+        "bearer": [
+          {
+            "key": "token",
+            "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlwIjoiMTI3LjAuMC4xIiwiaWF0IjoxNTY4NzEzNDU1fQ.N3LmEw7opHOwC0jTw3TzSRRNhB11uH0srFAU9laLnz19xo4TvPFWfT-lRU_2sdL6DLS-WkT0SN1tuiCEBNDleg"
+          }
+        ]
+      },
+      "events": null,
+      "folder": null,
+      "pathVariables": {}
+    }
+  ]
 }

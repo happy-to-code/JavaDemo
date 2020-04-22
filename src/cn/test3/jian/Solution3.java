@@ -29,7 +29,7 @@ public class Solution3 {
         for (int k = 0; k <= odd.size() - 1; k++) {
             array[k] = odd.get(k);
         }
-        for (int h = 0; h <= even.size() -1; h++) {
+        for (int h = 0; h <= even.size() - 1; h++) {
             array[h + odd.size()] = even.get(h);
         }
 

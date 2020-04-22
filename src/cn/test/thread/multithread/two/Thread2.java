@@ -12,6 +12,11 @@ public class Thread2 implements Runnable {
         this.name = name;
     }
 
+    public static void main(String[] args) {
+        new Thread(new Thread2("C")).start();
+        new Thread(new Thread2("D")).start();
+    }
+
     @Override
     public void run() {
         for (int i = 0; i < 5; i++) {
@@ -22,11 +27,6 @@ public class Thread2 implements Runnable {
                 e.printStackTrace();
             }
         }
-    }
-
-    public static void main(String[] args) {
-        new Thread(new Thread2("C")).start();
-        new Thread(new Thread2("D")).start();
     }
 
 }

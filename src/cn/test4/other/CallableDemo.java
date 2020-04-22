@@ -5,17 +5,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 public class CallableDemo implements Callable<Integer> {
-    @Override
-    public Integer call() throws Exception {
-        System.out.println("Enter call() method...");
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return 2571;
-    }
-
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         FutureTask<Integer> task = new FutureTask<>(new CallableDemo());
         /**
@@ -29,5 +18,16 @@ public class CallableDemo implements Callable<Integer> {
             // 类似于自旋锁
         }
         System.out.println(res + 100);
+    }
+
+    @Override
+    public Integer call() throws Exception {
+        System.out.println("Enter call() method...");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return 2571;
     }
 }

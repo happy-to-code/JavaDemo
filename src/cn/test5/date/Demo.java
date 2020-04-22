@@ -27,6 +27,5 @@ public class Demo {
         System.out.println(time.toString().length());
 
 
-
     }
 }

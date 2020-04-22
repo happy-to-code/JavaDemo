@@ -15,7 +15,7 @@ public class Demo {
         System.out.println(list);
         System.out.println(list.size());
         list.add("1");
-        list.add(1,"1");
+        list.add(1, "1");
 
         System.out.println(list);
 

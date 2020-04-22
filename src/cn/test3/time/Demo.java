@@ -17,6 +17,6 @@ public class Demo {
         System.out.println(time30);
         System.out.println(time60);
         System.out.println("-------------------");
-        System.out.println(time1-3600 * 24 * 40);
+        System.out.println(time1 - 3600 * 24 * 40);
     }
 }

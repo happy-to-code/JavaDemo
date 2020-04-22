@@ -20,7 +20,7 @@ public class Java8Test {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy年MM月dd日");
         LocalDate date = LocalDate.parse(dateStr, formatter);
 
-        System.out.println("data:"+date);
+        System.out.println("data:" + date);
 
 
         //日期转换为字符串
@@ -28,7 +28,7 @@ public class Java8Test {
         DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy年MM月dd日 hh:mm:ss a");
         String nowStr = now.format(format);
 
-        System.out.println("nowStr::"+nowStr);
+        System.out.println("nowStr::" + nowStr);
 
 
     }

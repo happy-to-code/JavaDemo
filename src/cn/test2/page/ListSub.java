@@ -19,6 +19,13 @@ public class ListSub {
      */
     private int total;
 
+    public static void main(String[] args) {
+        List<Long> datas = Arrays.asList(new Long[]{1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L});
+        ListSub listSub = new ListSub();
+        List<?> objects = listSub.ListSplit(datas);
+        System.out.println(objects);
+    }
+
     /**
      * @return the page
      */
@@ -66,19 +73,11 @@ public class ListSub {
      *
      * @return
      */
-    private  List<?> ListSplit(List<?> list) {
+    private List<?> ListSplit(List<?> list) {
         List<?> newList = null;
         total = list.size();
         newList = list.subList(rows * (page - 1), ((rows * page) > total ? total : (rows * page)));
         return newList;
-    }
-
-
-    public static void main(String[] args) {
-        List<Long> datas = Arrays.asList(new Long[]{1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L});
-        ListSub listSub = new ListSub();
-        List<?> objects = listSub.ListSplit(datas);
-        System.out.println(objects);
     }
 
 }

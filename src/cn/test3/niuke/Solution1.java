@@ -12,6 +12,13 @@ import java.util.List;
  * 给一个数组，返回它的最大连续子序列的和，你会不会被他忽悠住？(子向量的长度至少是1)
  */
 public class Solution1 {
+    public static void main(String[] args) {
+        int[] array = {-2, -2, -8, -1, -5, -9};
+        Solution1 s = new Solution1();
+        int i = s.FindGreatestSumOfSubArray(array);
+        System.out.println(i);
+    }
+
     public int FindGreatestSumOfSubArray(int[] array) {
         int max = array[0];
         int sum = 0;
@@ -55,13 +62,5 @@ public class Solution1 {
 
         }
         return max;
-    }
-
-
-    public static void main(String[] args) {
-        int[] array = {-2, -2, -8, -1, -5, -9};
-        Solution1 s = new Solution1();
-        int i = s.FindGreatestSumOfSubArray(array);
-        System.out.println(i);
     }
 }

@@ -13,6 +13,16 @@ public class User {
     private Integer age;
     private String sex;
 
+    public User() {
+    }
+
+    public User(Long id, String name, Integer age, String sex) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
+    }
+
     @Override
     public String toString() {
         return new StringJoiner(", ", User.class.getSimpleName() + "[", "]")
@@ -57,15 +67,5 @@ public class User {
     public User setSex(String sex) {
         this.sex = sex;
         return this;
-    }
-
-    public User() {
-    }
-
-    public User(Long id, String name, Integer age, String sex) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.sex = sex;
     }
 }

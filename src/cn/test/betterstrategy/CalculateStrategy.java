@@ -8,6 +8,7 @@ package cn.test.betterstrategy;
 public interface CalculateStrategy {
     /**
      * 计算接口
+     *
      * @param km
      * @return
      */

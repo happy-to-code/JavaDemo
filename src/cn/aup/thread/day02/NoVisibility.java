@@ -9,6 +9,13 @@ public class NoVisibility {
     private static boolean ready;
     private static int number;
 
+    public static void main(String[] args) {
+        new ReaderThread().start();
+        System.out.println("ready = " + ready);
+        number = 42;
+        ready = true;
+    }
+
     private static class ReaderThread extends Thread {
         @Override
         public void run() {
@@ -18,13 +25,6 @@ public class NoVisibility {
                 System.out.println(number + "------------");
             }
         }
-    }
-
-    public static void main(String[] args) {
-        new ReaderThread().start();
-        System.out.println("ready = " + ready);
-        number = 42;
-        ready = true;
     }
 
 

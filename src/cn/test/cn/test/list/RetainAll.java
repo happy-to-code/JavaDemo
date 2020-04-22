@@ -11,12 +11,12 @@ import java.util.List;
  */
 public class RetainAll {
     public static void main(String[] args) {
-        List<String> list1 =new ArrayList<>();
+        List<String> list1 = new ArrayList<>();
         list1.add("C");
         list1.add("D");
         list1.add("A");
 
-        List<String> list2 =new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
         list2.add("B");
         list2.add("C");
 

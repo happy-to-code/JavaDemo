@@ -15,12 +15,12 @@ public class Test {
         // System.out.println(lists.contains("a"));
 
 
-        HashMap<String,Long> hashMap = new HashMap<>(10);
+        HashMap<String, Long> hashMap = new HashMap<>(10);
         System.out.println("===============");
         System.out.println(hashMap.get("a"));
 
-        hashMap.put("a",1L);
-        hashMap.put("b",2L);
+        hashMap.put("a", 1L);
+        hashMap.put("b", 2L);
 
         System.out.println(hashMap.get("a"));
 

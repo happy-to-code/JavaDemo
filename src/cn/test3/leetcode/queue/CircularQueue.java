@@ -26,6 +26,14 @@ public class CircularQueue {
         n = capacity;
     }
 
+    public static void main(String[] args) {
+        CircularQueue circularQueue = new CircularQueue(3);
+        circularQueue.enqueue("1");
+        circularQueue.enqueue("2");
+        circularQueue.enqueue("3");
+        circularQueue.enqueue("4");
+
+    }
 
     /**
      * 入队
@@ -43,7 +51,6 @@ public class CircularQueue {
 
     }
 
-
     /**
      * 出队
      */
@@ -57,15 +64,6 @@ public class CircularQueue {
         head = (head + 1) % n;
 
         return ret;
-    }
-
-    public static void main(String[] args) {
-        CircularQueue circularQueue = new CircularQueue(3);
-        circularQueue.enqueue("1");
-        circularQueue.enqueue("2");
-        circularQueue.enqueue("3");
-        circularQueue.enqueue("4");
-
     }
 
 }

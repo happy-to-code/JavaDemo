@@ -1,6 +1,9 @@
 package cn.test3.jian;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @Describle:
@@ -12,6 +15,13 @@ import java.util.*;
  * 由于数字2在数组中出现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。
  */
 public class Solution4 {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 2, 4, 2, 5, 2, 3};
+        Solution4 solution4 = new Solution4();
+        int i = solution4.MoreThanHalfNum_Solution(array);
+        System.out.println(i);
+    }
+
     public int MoreThanHalfNum_Solution(int[] array) {
         List<Integer> list = new ArrayList<>(10);
         for (int i : array) {
@@ -42,12 +52,5 @@ public class Solution4 {
 
 
         return 0;
-    }
-
-    public static void main(String[] args) {
-        int [] array = {1,2,3,2,4,2,5,2,3};
-        Solution4 solution4 = new Solution4();
-        int i = solution4.MoreThanHalfNum_Solution(array);
-        System.out.println(i);
     }
 }

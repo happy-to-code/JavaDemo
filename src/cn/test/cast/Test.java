@@ -8,7 +8,7 @@ package cn.test.cast;
 public class Test {
     public static void main(String[] args) {
         Object o = null;
-        String s = (String)o;
+        String s = (String) o;
         System.out.println(s);
 
     }

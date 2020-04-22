@@ -10,6 +10,11 @@ import java.util.HashMap;
 public class LinkLoop {
 
     /**
+     * 保存足迹信息
+     */
+    private static HashMap<ListNode, Integer> nodeMap = new HashMap<>(4);
+
+    /**
      * 判断是否有环 快慢指针法
      *
      * @param headNode
@@ -44,12 +49,6 @@ public class LinkLoop {
 
         return false;
     }
-
-
-    /**
-     * 保存足迹信息
-     */
-    private static HashMap<ListNode, Integer> nodeMap = new HashMap<>(4);
 
     /**
      * 判断是否有环 足迹法

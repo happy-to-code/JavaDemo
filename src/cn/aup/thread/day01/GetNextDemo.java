@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 class Sequence {
     private int a;
 
-    public synchronized int  getNext() {
+    public synchronized int getNext() {
         return a++;
     }
 }
@@ -29,7 +29,7 @@ public class GetNextDemo {
                 System.out.println(Thread.currentThread().getName() + "\t" + sequence.getNext());
             }, "AA").start();
         }
-        
+
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {
                 System.out.println(Thread.currentThread().getName() + "\t" + sequence.getNext());

@@ -10,6 +10,14 @@ public class ThreadYield extends Thread {
         super(name);
     }
 
+    public static void main(String[] args) {
+
+        ThreadYield yt1 = new ThreadYield("张三");
+        ThreadYield yt2 = new ThreadYield("李四");
+        yt1.start();
+        yt2.start();
+    }
+
     @Override
     public void run() {
         for (int i = 1; i <= 50; i++) {
@@ -18,17 +26,9 @@ public class ThreadYield extends Thread {
             if (i == 30) {
                 // sleep  当前线程让出执行权 下次执行不会被抢到
                 // yield  让出当前执行权  但他自己还是可运行状态  下一次还有可能抢到执行权
-               yield();
+                yield();
             }
         }
 
-    }
-
-    public static void main(String[] args) {
-
-        ThreadYield yt1 = new ThreadYield("张三");
-        ThreadYield yt2 = new ThreadYield("李四");
-        yt1.start();
-        yt2.start();
     }
 }

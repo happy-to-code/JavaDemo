@@ -23,7 +23,6 @@ public class Demo3 {
         list.add("王五");
 
 
-
         map.put("sales", list);
 
         System.out.println(map);

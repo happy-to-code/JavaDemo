@@ -20,6 +20,7 @@ public class TranficCalculator {
     public void setStrategy(CalculateStrategy mStrategy) {
         this.mStrategy = mStrategy;
     }
+
     public int calculatePrice(int km) {
         return mStrategy.calculatePrice(km);
     }

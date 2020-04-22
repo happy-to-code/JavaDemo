@@ -6,8 +6,9 @@ import java.util.List;
 public class TestArrayList {
 
     private static final Integer PAGE_SIZE = 6;
+
     public static void main(String[] args) {
-        List<Long> datas = Arrays.asList(new Long [] {1L,2L,3L,4L,5L,6L,7L,8L});
+        List<Long> datas = Arrays.asList(new Long[]{1L, 2L, 3L, 4L, 5L, 6L, 7L, 8L});
 
         //总记录数
         Integer totalCount = datas.size();

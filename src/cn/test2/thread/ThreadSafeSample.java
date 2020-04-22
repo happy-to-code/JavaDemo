@@ -3,20 +3,6 @@ package cn.test2.thread;
 public class ThreadSafeSample {
     public int sharedState;
 
-    public void nonSafeAction() {
-        while (sharedState < 100000) {
-            synchronized (this) {
-                int former = sharedState++;
-                int latter = sharedState;
-                if (former != latter - 1) {
-                    System.out.printf("Observed data race, former is " +
-                            former + ", " + "latter is " + latter);
-                }
-            }
-
-        }
-    }
-
     public static void main(String[] args) throws InterruptedException {
         ThreadSafeSample sample = new ThreadSafeSample();
         Thread threadA = new Thread() {
@@ -35,5 +21,19 @@ public class ThreadSafeSample {
         threadB.start();
         threadA.join();
         threadB.join();
+    }
+
+    public void nonSafeAction() {
+        while (sharedState < 100000) {
+            synchronized (this) {
+                int former = sharedState++;
+                int latter = sharedState;
+                if (former != latter - 1) {
+                    System.out.printf("Observed data race, former is " +
+                            former + ", " + "latter is " + latter);
+                }
+            }
+
+        }
     }
 }

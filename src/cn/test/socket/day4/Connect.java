@@ -22,7 +22,7 @@ public class Connect {
     private static Thread tRecv = new Thread(new RecvThread());
     private static Thread tKeep = new Thread(new KeepThread());
 
-    public static void connect() throws  IOException {
+    public static void connect() throws IOException {
         client = threadConnect.get();
         if (client == null) {
             client = new Socket(HOST, PORT);
@@ -43,6 +43,19 @@ public class Connect {
             e.printStackTrace();
         }
 
+    }
+
+    public static void main(String[] args) {
+        try {
+            Connect.connect();
+            tRecv.start();
+        } catch (UnknownHostException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 
     private static class KeepThread implements Runnable {
@@ -84,19 +97,6 @@ public class Connect {
                 e.printStackTrace();
             }
 
-        }
-    }
-
-    public static void main(String[] args) {
-        try {
-            Connect.connect();
-            tRecv.start();
-        } catch (UnknownHostException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
     }
 }

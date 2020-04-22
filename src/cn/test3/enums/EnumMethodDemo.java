@@ -5,10 +5,6 @@ package cn.test3.enums;
  * 枚举实例
  */
 public class EnumMethodDemo {
-    enum Color {RED, GREEN, BLUE}
-
-    enum Size {BIG, MIDDLE, SMALL}
-
     public static void main(String[] args) {
         System.out.println("=========== Print all Color ===========");
         for (Color c : Color.values()) {
@@ -29,4 +25,8 @@ public class EnumMethodDemo {
         System.out.println("green equals 1: " + green.equals(1));
         System.out.format("green == Color.BLUE: %b\n", green == Color.BLUE);
     }
+
+    enum Color {RED, GREEN, BLUE}
+
+    enum Size {BIG, MIDDLE, SMALL}
 }

@@ -19,10 +19,10 @@ public class TimeTest {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(parse);
-        calendar.set(Calendar.HOUR_OF_DAY , 17);
-        calendar.set(Calendar.MINUTE , 0);
-        calendar.set(Calendar.SECOND , 0);
-        calendar.set(Calendar.MILLISECOND , 0);
+        calendar.set(Calendar.HOUR_OF_DAY, 17);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
         Date start = calendar.getTime();
 
 

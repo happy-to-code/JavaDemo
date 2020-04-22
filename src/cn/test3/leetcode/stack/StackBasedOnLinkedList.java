@@ -6,20 +6,6 @@ package cn.test3.leetcode.stack;
  * Author: Zheng
  */
 public class StackBasedOnLinkedList {
-    private static class Node {
-        private int data;
-        private Node next;
-
-        public Node(int data, Node next) {
-            this.data = data;
-            this.next = next;
-        }
-
-        public int getData() {
-            return data;
-        }
-    }
-
     private Node top = null;
 
     /**
@@ -58,6 +44,20 @@ public class StackBasedOnLinkedList {
             p = p.next;
         }
         System.out.println();
+    }
+
+    private static class Node {
+        private int data;
+        private Node next;
+
+        public Node(int data, Node next) {
+            this.data = data;
+            this.next = next;
+        }
+
+        public int getData() {
+            return data;
+        }
     }
 
 

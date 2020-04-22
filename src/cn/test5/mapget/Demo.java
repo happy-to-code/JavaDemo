@@ -10,9 +10,9 @@ import java.util.Map;
  */
 public class Demo {
     public static void main(String[] args) {
-        Map<String,Long> map = new HashMap<>(8);
-        map.put("11",123L);
-        map.put("12",123L);
+        Map<String, Long> map = new HashMap<>(8);
+        map.put("11", 123L);
+        map.put("12", 123L);
         System.out.println(map);
 
         System.out.println(map.get(11));

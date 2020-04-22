@@ -9,18 +9,18 @@ package cn.test3.jian;
  * 例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。
  */
 public class Solution1 {
+    public static void main(String[] args) {
+        String str = "W e Are Happy";
+        String s = str.replaceAll(" ", "%20");
+        System.out.println(s);
+    }
+
     public String replaceSpace(StringBuffer str) {
         if (str == null) {
             return null;
         }
         String s = str.toString();
         return s.replaceAll(" ", "%20");
-    }
-
-    public static void main(String[] args) {
-        String str = "W e Are Happy";
-        String s = str.replaceAll(" ", "%20");
-        System.out.println(s);
     }
 
 }

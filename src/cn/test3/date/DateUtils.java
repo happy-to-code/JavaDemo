@@ -12,26 +12,17 @@ import java.util.Date;
 public class DateUtils {
 
 
-    public static String FORMAT_Y4M = "yyyy-MM";
-
-    public static String FORMAT_Y4MD = "yyyy-MM-dd";
-
-    public static String FORMAT_Y4MdH = "yyyy-MM-dd HH";
-
-    public static String FORMAT_Y4MdHm = "yyyy-MM-dd HH:mm";
-
-    public static String FORMAT_Y4MdHms = "yyyy-MM-dd HH:mm:ss";
-
-    public static String FORMAT_Y4MdHms_POINT = "yyyy.MM.dd HH:mm:ss";
-
-    public static String FORMAT_Y4MdHms_Compact = "yyyyMMddHHmmss";
-
-    public static String FORMAT_HH = "HH";
-
     // 星期
     public static final String[] WEEK = new String[]{"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
-
     public static final String[] WEEK_SHORT = new String[]{"周日", "周一", "周二", "周三", "周四", "周五", "周六"};
+    public static String FORMAT_Y4M = "yyyy-MM";
+    public static String FORMAT_Y4MD = "yyyy-MM-dd";
+    public static String FORMAT_Y4MdH = "yyyy-MM-dd HH";
+    public static String FORMAT_Y4MdHm = "yyyy-MM-dd HH:mm";
+    public static String FORMAT_Y4MdHms = "yyyy-MM-dd HH:mm:ss";
+    public static String FORMAT_Y4MdHms_POINT = "yyyy.MM.dd HH:mm:ss";
+    public static String FORMAT_Y4MdHms_Compact = "yyyyMMddHHmmss";
+    public static String FORMAT_HH = "HH";
 
     public static String now() {
         Calendar cal = Calendar.getInstance();

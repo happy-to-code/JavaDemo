@@ -5,6 +5,13 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * 被访问者接口
+ */
+interface IHello {
+    void sayHello();
+}
+
+/**
  * 动态代理的实现
  *
  * @author pjmike
@@ -19,13 +26,6 @@ public class DynamicProxy {
         //调用代理方法
         proxyHello.sayHello();
     }
-}
-
-/**
- * 被访问者接口
- */
-interface IHello {
-    void sayHello();
 }
 
 /**

@@ -62,6 +62,37 @@ public class BSearch {
     /**
      * 二分查找
      *
+     * @param a
+     * @param n
+     * @param value
+     * @return
+     */
+    public static int bsearch(int[] a, int n, int value) {
+        int low = 0;
+        int high = n - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (a[mid] == value) {
+                return mid;
+            } else if (a[mid] < value) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] a = {2, 3, 5, 7, 9, 13, 18};
+        System.out.println(binarySearch(a, 0, a.length, 13));
+        System.out.println(binarySearch1(a, 0, a.length, 18));
+        System.out.println(bsearch(a, a.length, 18));
+    }
+
+    /**
+     * 二分查找
+     *
      * @param array
      * @param n
      * @param value
@@ -91,37 +122,5 @@ public class BSearch {
             //如果每次循环都判断一下是否相等，将耗费时间
         }
         return -1;
-    }
-
-
-    /**
-     * 二分查找
-     *
-     * @param a
-     * @param n
-     * @param value
-     * @return
-     */
-    public static int bsearch(int[] a, int n, int value) {
-        int low = 0;
-        int high = n - 1;
-        while (low <= high) {
-            int mid = (low + high) / 2;
-            if (a[mid] == value) {
-                return mid;
-            } else if (a[mid] < value) {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
-        }
-        return -1;
-    }
-
-    public static void main(String[] args) {
-        int[] a = {2, 3, 5, 7, 9, 13, 18};
-        System.out.println(binarySearch(a, 0, a.length, 13));
-        System.out.println(binarySearch1(a, 0, a.length, 18));
-        System.out.println(bsearch(a, a.length, 18));
     }
 }

@@ -21,12 +21,11 @@ public class TimeTest {
         System.out.println(s);
 
         long c = System.currentTimeMillis();
-        System.out.println("c:"+c);
-        System.out.println("v:"+v);
+        System.out.println("c:" + c);
+        System.out.println("v:" + v);
         System.out.println("===========");
-        long t = (c-v) / (1000 * 60 * 60 * 24);
+        long t = (c - v) / (1000 * 60 * 60 * 24);
         System.out.println(t);
-
 
 
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
@@ -34,7 +33,7 @@ public class TimeTest {
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         long timestamp = cal.getTimeInMillis();
-        System.out.println(timestamp/1000);
+        System.out.println(timestamp / 1000);
 
 
     }

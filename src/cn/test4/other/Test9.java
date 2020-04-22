@@ -14,9 +14,9 @@ public class Test9 {
 
         AtomicInteger atomicInteger = new AtomicInteger(10);
         atomicInteger.getAndSet(1);
-        atomicInteger.compareAndSet(1,1);
+        atomicInteger.compareAndSet(1, 1);
         Boolean b = true;
-        if(b){
+        if (b) {
             System.out.println("b = " + b);
         }
     }

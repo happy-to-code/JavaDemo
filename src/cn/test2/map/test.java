@@ -10,11 +10,11 @@ import java.util.Map;
  */
 public class test {
     public static void main(String[] args) {
-        Map<String,String> map = new HashMap<>(10);
+        Map<String, String> map = new HashMap<>(10);
 
         System.out.println(map.isEmpty());
         System.out.println(map.size());
-        map.put("ssfds","9000");
+        map.put("ssfds", "9000");
         System.out.println(map.size());
         System.out.println(map.isEmpty());
 

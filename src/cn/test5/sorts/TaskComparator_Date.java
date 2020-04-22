@@ -11,7 +11,7 @@ public class TaskComparator_Date implements Comparator {
         if (task1.getDate() != null && task2.getDate() != null) {
             if (task1.getDate().getTime() > task2.getDate().getTime()) {
                 return -1;
-            }else {
+            } else {
                 return 1;
             }
         } else {

@@ -8,13 +8,6 @@ package cn.test3.thread.jike;
 public class Test {
     private static long count = 0;
 
-    private void add10K() {
-        int idx = 0;
-        while (idx++ < 10000) {
-            count += 1;
-        }
-    }
-
     public static long calc() throws InterruptedException {
         final Test test = new Test();
 
@@ -38,5 +31,12 @@ public class Test {
         long calc = calc();
 
         System.out.println(calc);
+    }
+
+    private void add10K() {
+        int idx = 0;
+        while (idx++ < 10000) {
+            count += 1;
+        }
     }
 }

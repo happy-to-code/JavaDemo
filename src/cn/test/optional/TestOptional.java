@@ -5,6 +5,6 @@ package cn.test.optional;
  * @Author:zhangyifei
  * @Date:2018/11/29
  */
-public class TestOptional{
+public class TestOptional {
 
 }

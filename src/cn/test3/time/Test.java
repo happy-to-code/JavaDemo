@@ -14,6 +14,6 @@ public class Test {
         System.out.println(substring1);
         System.out.println("--------------");
 
-        System.out.println(1%8);
+        System.out.println(1 % 8);
     }
 }
