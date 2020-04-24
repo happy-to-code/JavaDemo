@@ -19,10 +19,18 @@ public class Subject {
         notifyAllObservers();
     }
 
+    /**
+     * 订阅
+     *
+     * @param observer
+     */
     public void attach(Observer observer) {
         observers.add(observer);
     }
 
+    /**
+     * 通知所有观察者
+     */
     public void notifyAllObservers() {
         for (Observer observer : observers) {
             observer.update();
